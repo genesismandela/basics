@@ -1,0 +1,14 @@
+body {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  color: hsl(0, 40%, 67%);
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 2;
+}
