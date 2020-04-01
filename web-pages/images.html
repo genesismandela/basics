@@ -7,39 +7,82 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Genesis Mandela | Make HTML & CSS easy</title>
   <link rel="stylesheet" href="css/images.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-159180375-1');
+        </script>
 </head>
 
 <body>
-  <div class="item-1">
-  <a href="https://mandyjurgens.com" target="_blank">
-    <img src="../img/web-pages/mandy-jurgens-canal.jpg" alt="Art Mandy Jurgens">
-    <p>Art Mandy Jurgens</p>
-  </a>
+  <section id="main-wrapper">
+    <h1>Images</h1>
+    <div class="item-1">
+      <h2>Some Art</h2>
+      <div>
+        <a href="https://www.pexels.com" target="_blank">
+          <img src="../img/web-pages/blue-red-plants.jpg" alt="Blue and red contrast in plants">
+          <p>Picture from Juanjo Menta in Pexels</p>
+        </a>
+        <a href="https://www.pexels.com" target="_blank">
+          <img src="../img/web-pages/colorful-boy.jpg" alt="Boy with colorful painted hands">
+          <p>Picture from Sharon McCutcheon in Pexels</p>
+        </a>
+        <a href="https://www.pexels.com" target="_blank">
+          <img src="../img/web-pages/shadow-girl-moon.jpg" alt="Girl playing under the moon">
+          <p>Picture of Luizclas in Pexels</p>
+        </a>
+      </div>
 
-  <p>JPG is used with pictures with lots of gradients in them and they do not allow transparent pixels.</p>
-  </div>
-  <hr>
-  <div class="item-2">
-  <img src="../img/web-pages/mochi-gif.gif" alt="Mochi">
-  <p>Gif images are good option in simple animations.</p>
-  </div>
-  <hr>
-  <div class="item-3">
-  <img src="../img/web-pages/brain-mind.png" alt="Brain">
-  <p>They do deal with opacity and don't have color palette limitations. Excellent fit for logos, icons or technical diagrams.</p>
-  </div>
-  <hr>
-  <div class="item-4">
-  <img src="../img/web-pages/dragon-solid.svg" alt="Dragon">
-  <p>SVG is a vector-based graphic format, that means it can scale up or down to any dimension without losing quality.</p>
-  </div>
-  <hr>
-  <div class="item-5">
-  <ul>
-    <li><a href="basics.html">Basics</a></li>
-    <li><a href="images.html">Images</a></li>
-    <li><a href="links.html">Links</a></li>
-  </ul>
-  </div>
+      <p>JPG is used with pictures with lots of gradients in them and they do not allow transparent pixels.</p>
+
+    </div>
+
+    <hr>
+
+    <div class="other-images">
+    <div class="item-2">
+      <img src="../img/web-pages/mochi-gif.gif" alt="Mochi">
+      <p>Gif's are good option in simple animations and they can be tremendously useful to communicate, sometimes being better than still images.</p>
+    </div>
+
+    <hr>
+
+    <div class="item-3">
+      <img src="../img/web-pages/brain-mind.png" alt="Brain" class="brain">
+      <p>PNG do deal with opacity and don't have color palette limitations. Excellent fit for logos, icons or technical diagrams.</p>
+    </div>
+
+    <hr>
+
+    <div class="item-4">
+      <img src="../img/web-pages/dragon-solid.svg" alt="Dragon">
+      <p>SVG is a vector-based graphic format, that means it can scale up or down to any dimension without losing quality.</p>
+    </div>
+    </div>
+
+    <hr>
+
+
+    <div class="item-5">
+      <ul>
+        <li><a href="basics.html">Basics</a></li>
+        <li><a href="#main-wrapper">Images</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Genesis Mandela 2020.</p>
+  </footer>
+
 </body>
+
 </html>

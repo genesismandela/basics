@@ -1,4 +1,186 @@
-div {
-  border: 1px solid;
-  margin: 2rem 0;
+body{
+  background-color: hsla(0, 0%, 79%, 0.75);
+  color: hsl(0, 0%, 31%);
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+    margin: 2rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: hsla(0, 75%, 75%, 1);
+}
+
+h2 {
+  font-size: 4.3rem;
+  color: hsla(60, 75%, 75%, 1);
+}
+
+h3 {
+  font-size: 3.6rem;
+  color: hsla(120, 75%, 75%, 1);
+}
+
+h4 {
+  font-size: 2.9rem;
+  color: hsla(180, 75%, 75%, 1);
+}
+
+h5 {
+  font-size: 2.2rem;
+  color: hsla(240, 75%, 75%, 1);
+}
+
+h6 {
+  font-size: 1.5rem;
+  color: hsla(300, 75%, 75%, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1.5rem 1.25rem;
+  font-family: 'Courgette', cursive;
+}
+
+
+/* FIRST DIV */
+.item-1 {
+  text-align: center;
+}
+
+.item-1 > h1 {
+  padding: 1.5rem;
+  color: #000;
+}
+
+.item-1 > p {
+  font-size: 1.8rem;
+  padding: 1.25rem;
+}
+
+hr {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* SECOND DIV */
+.item-2 {
+  text-align: center;
+}
+
+
+/* THIRD DIV */
+.item-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ul,
+.ol {
+  border-left: 1px solid white;
+  margin: 0 auto;
+  width: 45%;
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+.item-3 li {
+  padding: 1rem;
+  font-size: 1.2rem;
+  list-style-position: inside;
+}
+
+.item-3 p {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.tip {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+
+/* FOURTH DIV */
+.item-4 {
+  background-color: black;
+}
+
+.item-4 p {
+  color: white;
+  padding: 1.25rem;
+}
+
+
+
+
+
+/* FIFTH DIV */
+.item-5 {
+}
+
+.item-5 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.item-5 ul li {
+  padding: 2.5rem;
+  list-style: none;
+}
+
+.item-5 ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.item-5 ul li a:hover {
+  color: hsla(120, 90%, 20%, 0.5);
+}
+
+.item-5 ul li a:active {
+  color: hsla(270, 90%, 20%, 0.5);
+}
+
+/* FOOTER */
+footer {
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  margin: auto 0;
 }

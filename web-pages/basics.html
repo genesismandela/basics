@@ -7,68 +7,88 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Genesis Mandela | Make HTML & CSS easy</title>
   <link rel="stylesheet" href="css/basics.css">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-159180375-1');
+        </script>
 </head>
 
 <body>
-  <section class="main-wrapper">
+  <section id="main-wrapper">
     <div class="item-1">
-      <h2>Interneting Is Easy!</h2>
-      <p>First, we need to learn some basic HTML.</p>
+      <h1>Interneting Is Easy!</h1>
+      <p>Let's start learning some basic HTML.</p>
     </div>
 
+    <hr>
+
     <div class="item-2">
-    <h3>Headings</h3>
-    <p>
-      <em>Headings</em> define the outline of your site. There are six levels of headings.
-    </p>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
     </div>
 
     <div class="item-3">
-    <h2>Lists</h2>
-    <p>This is how you make an <em>unordered list</em>:</p>
-  </div>
+      <h2>Lists</h2>
+      <div class="ul">
+        <h3>Unordered list</h3>
+        <p>This is how you make an <em>unordered list</em>:</p>
+        <ul>
+          <li>Add a "ul" element (it stands for unordered list)</li>
+          <li>Add each item in its own "li" element</li>
+          <li>They don't need to be in any particular order</li>
+        </ul>
+      </div>
+
+      <div class="ol">
+        <h3>Ordered list</h3>
+        <p>This is what an <em>ordered list</em> looks like:</p>
+        <ol>
+          <li>Notice the new "ol" element wrapping everything</li>
+          <li>But, the list item elements are the same</li>
+          <li>Also note how the numbers increment on their own</li>
+          <li>You should be noticing things is this precise order, because this is an ordered list</li>
+        </ol>
+      </div>
+      <div class="tip">
+        <p>
+          <em><strong>Do not insert elements like headings of paragraphs inside <q>ul, or or dl</q> elements.</strong> </em>
+        </p>
+      </div>
+    </div>
+
+
+
+
     <div class="item-4">
-    <ul>
-      <li>Add a "ul" element (it stands for unordered list)</li>
-      <li>Add each item in its own "li" element</li>
-      <li>They don't need to be in any particular order</li>
-    </ul>
-    <p>This is what an <em>ordered list</em> looks like:</p>
+      <h2>Inline elements</h2>
+      <p>
+        <em>Sometimes</em>, you need to draw attention to a particular word or phrase.
+      </p>
+
+      <p>Other times you need to <strong>strong</strong>ly emphasize the importance of a word or phrase.</p>
     </div>
-
-
     <div class="item-5">
-    <ol>
-      <li>Notice the new "ol" element wrapping everything</li>
-      <li>But, the list item elements are the same</li>
-      <li>Also note how the numbers increment on their own</li>
-      <li>You should be noticing things is this precise order, because this is an ordered list</li>
-    </ol>
-    </div>
-
-
-    <div class="item-6">
-    <p class="list-rules">
-      <em><strong>Do not insert elements inside <q>ul, or or dl</q> elements.</strong> </em>
-    </p>
-    </div>
-
-    <div class="item-7">
-    <h2>Inline elements</h2>
-    <p>
-      <em>Sometimes</em>, you need to draw attention to a particular word or phrase.
-    </p>
-
-    <p>Other times you need to <strong>strong</strong>ly emphasize the importance of a word or phrase.</p>
-    </div>
-    <div class="item-8">
-    <ul>
-      <li><a href="basics.html">Basics</a></li>
-      <li><a href="images.html">Images</a></li>
-      <li><a href="links.html">Links</a></li>
-    </ul>
+      <ul>
+        <li><a href="#main-wrapper">Basics</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
     </div>
   </section>
+  <footer>
+    <p>&copy; Genesis Mandela 2020.</p>
+  </footer>
 </body>
 
 </html>

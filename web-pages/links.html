@@ -7,19 +7,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Genesis Mandela | Make HTML & CSS easy</title>
   <link rel="stylesheet" href="css/links.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-159180375-1');
+        </script>
 </head>
 
 <body>
-  <section>
+  <section id="main-wrapper">
 
-    <h2>Links</h2>
+    <h1>Links</h1>
 
     <div class="item-1">
-      <h3>Absolute links</h3>
+      <h2>Absolute links</h2>
       <p>Most detailed way to refer to a web resourse</p>
       <ul>
-        <li>See the classics shoes of <a href="https://www.vans.com" target="_blank">Vans</a></li>
-        <li>Or some technology products in <a href="https://www.apple.com" target="_blank">Apple</a></li>
+        <li><a href="https://www.vans.com" target="_blank" class="vans">Vans</a></li>
+        <li class="apple"><a href="https://www.apple.com" target="_blank">Apple</a></li>
       </ul>
       <p>
         <em><sup>*</sup>Both are opened in a new window with<q>target:_blank</q>.</em>
@@ -27,11 +38,11 @@
     </div>
 
     <div class="item-2">
-      <h3>Relative links</h3>
+      <h2>Relative links</h2>
       <p>It is a way to point to another file inside the website or file that you are editing</p>
     </div>
-
-    <div class="item-3">
+    <div class="relative">
+    <div class="no-parent">
       <ul>
         <li><a href="basics.html">Basics</a></li>
         <li><a href="images.html">Images</a></li>
@@ -39,22 +50,27 @@
       <p><em><sup>*</sup>No parent reference</em></p>
     </div>
 
-    <div class="item-4">
+    <div class="with-parent">
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
       <p><em><sup>*</sup>With parent reference</em></p>
     </div>
+    </div>
 
     <div class="item-5">
       <ul>
         <li><a href="basics.html">Basics</a></li>
         <li><a href="images.html">Images</a></li>
-        <li><a href="links.html">Links</a></li>
+        <li><a href="#main-wrapper">Links</a></li>
       </ul>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; Genesis Mandela 2020.</p>
+  </footer>
 </body>
 
 </html>

@@ -1,8 +1,163 @@
-img {
-  width: 300px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-div {
-  border: 1px solid;
-  margin: 2rem 0;
+body {
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  padding: 0 2rem;
+}
+
+img {
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  margin-bottom: 3rem;
+}
+
+/* Some Art */
+
+.item-1 h2 {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.item-1 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-1 a {
+  padding: 1.25%;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0.75rem 1rem;
+}
+
+.item-1 img {
+  padding: 0.5rem;
+}
+
+.item-1 > p {
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Other images */
+.other-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-images img {
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.other-images p {
+  padding: 2rem;
+  font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (1600 - 320)));
+  color: hsla(49, 80%, 45%, 1);
+}
+
+.other-images .item-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: hsla(50, 20%, 60%, 0.30);
+}
+
+.other-images .item-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: hsla(183, 19%, 60%, 0.3);
+}
+
+.other-images .item-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: hsla(324, 19%, 60%, 0.3);
+}
+
+hr {
+  width: 45%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+/* FIFTH DIV */
+.item-5 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.item-5 ul li {
+  padding: 2.5rem;
+  list-style: none;
+}
+
+.item-5 ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.item-5 ul li a:hover {
+  color: hsla(120, 90%, 20%, 0.5);
+}
+
+.item-5 ul li a:active {
+  color: hsla(270, 90%, 20%, 0.5);
+}
+
+
+
+
+/* FOOTER */
+footer {
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  margin: auto 0;
 }
