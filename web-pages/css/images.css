@@ -1,110 +1,160 @@
+/* ===BROWSER RESETS=== */
 * {
+  border: 0;
   box-sizing: border-box;
+  font-size: 16px;
+  font-weight: normal;
   margin: 0;
   padding: 0;
-  width: 100%;
+  border: 1px solid;
 }
 
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 body {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 32%, 0.75);
+  color: hsl(0, 0%, 31%);
+  font-family: Helvetica, sans-serif;
   font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-  padding: 0 2rem;
+}
+
+/* ===GENERAL STYLES=== */
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  padding: 1.25rem;
+  font-family: 'Courgette', cursive;
+}
+
+h2 {
+  padding: 1.25rem;
+  font-size: 2.35rem;
+  color: hsla(60, 75%, 75%, 1);
 }
 
 img {
-  max-width: 300px;
+  width: 300px;
 }
 
-h1 {
-  font-size: 5rem;
-  text-align: center;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
 
-.item-1,
-.item-2,
-.item-3,
-.item-4,
-.item-5 {
-  margin-bottom: 3rem;
-}
-
-/* Some Art */
-
-.item-1 h2 {
-  font-size: 4rem;
-  padding: 2rem;
-}
-
-.item-1 > div {
+/* Header */
+header {
+  height: 100vh;
+  background-image: url(../../img/web-pages/art-painting-wall.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   text-align: center;
 }
 
-.item-1 a {
-  padding: 1.25%;
-  text-align: center;
-  justify-content: center;
+header > h1 {
+  font-size: 5rem;
+  color: hsla(0, 0%, 100%, 0.72);
   align-self: center;
-  margin: 0.75rem 1rem;
+  -webkit-text-stroke: 2px black;
 }
 
-.item-1 img {
-  padding: 0.5rem;
-}
-
-.item-1 > p {
-  padding: 2rem;
-  font-size: 1.3rem;
-}
-
-/* Other images */
-.other-images {
+/* Main */
+main {
   display: flex;
   flex-direction: column;
 }
 
-.other-images img {
-  padding: 2rem;
-  margin: 3rem;
-}
-
-.other-images p {
-  padding: 2rem;
-  font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (1600 - 320)));
-  color: hsla(49, 80%, 45%, 1);
-}
-
-.other-images .item-2 {
+/* Some Art */
+.art-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
+  flex-direction: column;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.art-container h2 {
+  margin-left: 5%;
+}
+
+
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.photos-container a {
+  width: 100%
+  text-align: center;
+  justify-content: space-around;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.photos-container img {
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  min-width: 320px;
+}
+
+.photos-container p {
+  font-size: .8rem;
+}
+
+.art-container > p {
+  padding: 1.25rem;
+  margin-left: 5%;
+}
+
+/* Other images */
+.images-formats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images-formats-container img {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.images-formats-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.images-formats-container p {
+  margin-top: .75rem;
+  padding: 2rem;
+  font-size: 1.25rem;
+  color: hsla(49, 80%, 45%, 1);
+  align-self: center;
+  margin-left: 2rem;
+  border-left: .5px solid hsla(48, 82%, 21%, 1);
+}
+
+.gif-container {
   background-color: hsla(50, 20%, 60%, 0.30);
 }
 
-.other-images .item-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-  margin-top: 2rem;
+.png-container {
+
   background-color: hsla(183, 19%, 60%, 0.3);
 }
 
-.other-images .item-4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-  margin-top: 2rem;
+.svg-container {
   background-color: hsla(324, 19%, 60%, 0.3);
 }
 
@@ -113,22 +163,37 @@ hr {
   margin: 0 auto;
 }
 
-
-
-
-
-
-/* FIFTH DIV */
-.item-5 ul{
+/* NAV LIST */
+.item-5 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
+.item-5 ul{
+  padding: 2.25rem;
+  width: 100%;
+}
+
 .item-5 ul li {
-  padding: 2.5rem;
   list-style: none;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+li.bricks {
+  background-image: url(../../img/web-pages/brick-wall.jpg);
+}
+
+li.hands {
+  background-image: url(../../img/web-pages/colorful-boy.jpg);
+}
+
+li.vans {
+  background-image: url(../../img/web-pages/vans.jpg);
 }
 
 .item-5 ul li a {
@@ -136,15 +201,13 @@ hr {
   font-size: 3rem;
 }
 
-.item-5 ul li a:hover {
-  color: hsla(120, 90%, 20%, 0.5);
+.item-5 a:link {
+  color: white;
 }
 
-.item-5 ul li a:active {
-  color: hsla(270, 90%, 20%, 0.5);
+.item-5 a:hover {
+  color: hsla(43, 85%, 51%, 0.91);
 }
-
-
 
 
 /* FOOTER */
@@ -160,4 +223,59 @@ footer {
 
 footer p {
   margin: auto 0;
+}
+
+
+/* Media Queries / Breakpoints */
+@media all and (min-width: 600px) {
+  .images-formats-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  main {
+  }
+}
+
+@media all and (min-width: 768px) {
+  main {
+  }
+
+  .photos-container {
+    justify-content: space-around;
+  }
+
+  .photos-container a {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .item-5 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .item-5 ul li{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media and all (min-width: 475px) {
+  .photos-container img {
+    min-width: 500px;
+}
+
+@media and all (min-width: 690px) {
+  .photos-container img {
+    margin-left: 2rem;
+  }
 }

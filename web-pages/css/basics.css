@@ -1,58 +1,40 @@
-body{
+/* ===BROWSER RESETS=== */
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: hsla(0, 0%, 79%, 0.75);
   color: hsl(0, 0%, 31%);
   font-family: Helvetica, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+/* ===GENERAL STYLES=== */
 .main-wrapper {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
-
 
 .item-1,
 .item-2,
 .item-3,
 .item-4,
 .item-5 {
-    margin: 2rem 0;
-}
-
-h1 {
-  font-size: 5rem;
-  color: hsla(0, 75%, 75%, 1);
-}
-
-h2 {
-  font-size: 4.3rem;
-  color: hsla(60, 75%, 75%, 1);
-}
-
-h3 {
-  font-size: 3.6rem;
-  color: hsla(120, 75%, 75%, 1);
-}
-
-h4 {
-  font-size: 2.9rem;
-  color: hsla(180, 75%, 75%, 1);
-}
-
-h5 {
-  font-size: 2.2rem;
-  color: hsla(240, 75%, 75%, 1);
-}
-
-h6 {
-  font-size: 1.5rem;
-  color: hsla(300, 75%, 75%, 1);
+    margin-bottom: 2rem;
 }
 
 h1,
@@ -61,100 +43,174 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 1.5rem 1.25rem;
+  padding: 1.25rem;
   font-family: 'Courgette', cursive;
 }
 
+h1 {
+  font-size: 2.5rem;
+  color: hsla(0, 75%, 75%, 1);
+}
 
-/* FIRST DIV */
+h2 {
+  font-size: 2.35rem;
+  color: hsla(60, 75%, 75%, 1);
+}
+
+h3 {
+  font-size: 2.20rem;
+  color: hsla(120, 75%, 75%, 1);
+}
+
+h4 {
+  font-size: 2rem;
+  color: hsla(180, 75%, 75%, 1);
+}
+
+h5 {
+  font-size: 1.75rem;
+  color: hsla(240, 75%, 75%, 1);
+}
+
+h6 {
+  font-size: 1.5rem;
+  color: hsla(300, 75%, 75%, 1);
+}
+
+/* ===MAIN HEADER=== */
 .item-1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background-image: url(../../img/web-pages/brick-wall.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .item-1 > h1 {
-  padding: 1.5rem;
-  color: #000;
+  color: #fff;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-shadow: 3px 2px black;
+  letter-spacing: 0.225rem;
 }
 
 .item-1 > p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 1.25rem;
+  color: #fff;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.0825rem;
 }
 
-hr {
-  width: 40%;
-  margin: 0 auto;
-}
-
-/* SECOND DIV */
+/* === HEADINGS SECTION=== */
 .item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 100vh;
+  background-color: rgba(20, 19, 17, 0.38);
+}
+
+/* LISTS SECTION */
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-3 h3 {
   text-align: center;
 }
 
-
-/* THIRD DIV */
-.item-3 {
+.lists-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.ul,
-.ol {
+.item-3 ol, ul {
+  list-style-position: inside;
+  padding: 1rem;
+}
+
+.unordered-list,
+.ordered-list {
   border-left: 1px solid white;
-  margin: 0 auto;
-  width: 45%;
-}
-
-ol {
-  list-style: upper-roman;
+  margin: 1rem auto;
+  width: 95%;
+  background-color: #fff;
+  box-shadow: 5px 3px 5px 5px hsla(126, 4%, 38%, 0.89);
 }
 
 .item-3 li {
-  padding: 1rem;
   font-size: 1.2rem;
-  list-style-position: inside;
+  padding: 1.35rem;
 }
 
+
 .item-3 p {
-  padding-left: 1.25rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: .75px solid black;
 }
 
 .tip {
-  width: 50%;
-  margin: 2rem auto;
+  margin: 0.8rem 0;
 }
 
 
-/* FOURTH DIV */
+/* INLINE ELEMENTS SECTION */
 .item-4 {
+  display: flex;
+  flex-direction: column;
   background-color: black;
+  margin: 2rem 0;
 }
 
 .item-4 p {
   color: white;
-  padding: 1.25rem;
+  padding: 1rem;
+  line-height: 1.2rem;
 }
 
 
-
-
-
-/* FIFTH DIV */
+/* NAV LIST */
 .item-5 {
-}
-
-.item-5 ul{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
+.item-5 ul{
+  padding: 2.25rem;
+  width: 100%;
+}
+
 .item-5 ul li {
-  padding: 2.5rem;
   list-style: none;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+li.bricks {
+  background-image: url(../../img/web-pages/brick-wall.jpg);
+}
+
+li.hands {
+  background-image: url(../../img/web-pages/colorful-boy.jpg);
+}
+
+li.vans {
+  background-image: url(../../img/web-pages/vans.jpg);
 }
 
 .item-5 ul li a {
@@ -162,13 +218,14 @@ ol {
   font-size: 3rem;
 }
 
-.item-5 ul li a:hover {
-  color: hsla(120, 90%, 20%, 0.5);
+.item-5 a:link {
+  color: white;
 }
 
-.item-5 ul li a:active {
-  color: hsla(270, 90%, 20%, 0.5);
+.item-5 a:hover {
+  color: hsla(43, 85%, 51%, 0.91);
 }
+
 
 /* FOOTER */
 footer {
@@ -183,4 +240,43 @@ footer {
 
 footer p {
   margin: auto 0;
+}
+
+/* Media queries and breakpoints */
+@media all and (min-width: 600px) {
+  main {
+    padding: 0 5%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  main {
+    padding: 0 7.5%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .lists-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .unordered-list,
+  .ordered-list {
+    margin: 0 1rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .item-5 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .item-5 ul li{
+    width: 30%;
+  }
 }
