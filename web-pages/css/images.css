@@ -53,14 +53,11 @@ header {
   background-image: url(../../img/web-pages/art-painting-wall.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
-header > h1 {
-  font-size: 5rem;
-  color: hsla(0, 0%, 100%, 0.89);
-  align-self: center;
-  padding: 1.25rem;
-
+nav {
+  background-color: rgba(10, 136, 133, 0.54);
 }
 
 /* Main */
@@ -149,6 +146,7 @@ main {
   align-self: center;
   border-left: .5px solid hsla(48, 82%, 21%, 1);
   margin: 1rem;
+  color: #000;
 }
 
 .gif-container {

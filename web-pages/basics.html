@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Genesis Mandela | Make HTML & CSS easy</title>
+  <link rel="stylesheet" href="css/template-flex.css">
   <link rel="stylesheet" href="css/basics.css">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,10 +23,28 @@
 </head>
 
 <body>
-  <section id="main-wrapper">
-    <header class="item-1">
-      <h1>Interneting Is Easy!</h1>
-      <p>Let's start learning some basic HTML.</p>
+  <div id="main-wrapper">
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="basics.html">Basics</a></li>
+          <li class="nav-item"><a href="images.html">Images</a></li>
+          <li class="nav-item"><a href="links.html">Links</a></li>
+          <li class="nav-item"><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-burger">
+          <div class="nav-burger-lines"></div>
+          <div class="nav-burger-lines"></div>
+          <div class="nav-burger-lines"></div>
+        </div>
+        <a class="logo-container" href="../index.html">
+          <img class="logo-img" src="../img/cannabis-solid.svg" alt="main-logo">
+        </a>
+      </nav>
+      <h1>BASICS</h1>
     </header>
 
     <main>
@@ -96,7 +115,7 @@
       <p>Genesis Mandela 2020.</p>
     </footer>
 
-  </section>
+  </div>
 </body>
 
 </html>

@@ -73,10 +73,6 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: blue;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 nav {
@@ -131,7 +127,7 @@ nav {
   position: absolute;
   left: 0;
   border: 1px solid;
-  padding: .75rem;
+  width: 3rem;
   margin-left: .75rem;
 }
 

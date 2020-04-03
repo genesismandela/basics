@@ -77,15 +77,16 @@ h6 {
   color: hsla(300, 75%, 75%, 1);
 }
 
-/* ===MAIN HEADER=== */
-.item-1 {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+/* ===HEADER=== */
+header {
   background-image: url(../../img/web-pages/brick-wall.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: rgba(136, 75, 10, 0.54);
 }
 
 .item-1 > h1 {
