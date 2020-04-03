@@ -1,126 +1,82 @@
-/* Browser main styles */
-* {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
+/* Header */
+header {
+  background-image: url(../../img/web-pages/tech-desk.jpg);
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-body {
-  font-size: 16px;
-  font-family: 'Lora', serif;
+nav {
+  background-color: hsla(0, 0%, 46%, 0.5);
 }
 
-h1 {
-  font-size: 5rem;
-  text-align: center;
-  color: hsla(264, 75%, 20%, 0.85);
+/* Main-One / Absolute links */
+.main-one {
+  background-color: #777;
+  box-shadow: 3px 3px 6px 6px #444;
 }
 
 h2 {
-  font-size: 2.5rem;
-  padding: 2rem;
+  margin-top: 0.5rem;
 }
 
-p {
-  padding: 1rem 2rem;
+.back-panel {
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* Absolute links */
-.item-1 {
-  margin-top: 3rem;
-}
-
-.item-1 ul {
-  width: 100%;
-  padding: 1.25rem;
-}
-
-.item-1 ul li {
-  height: 50px;
-  list-style: none;
-}
-
-.item-1 ul li a {
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  font-size: 2rem;
-  padding: 0 3rem;
-}
-
-
-/* Relative links */
-.item-2 {
-  margin-top: 3rem;
-}
-
-.relative {
+.main-one ul {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
-  padding: 2rem;
+  box-shadow: 3px 3px 6px 6px #5b5510;
 }
 
-.relative div {
-  width: 50%;
-}
-
-.no-parent {
-  background-color: hsl(87, 35%, 57%);
-}
-
-.with-parent {
-  background-color: hsl(287, 35%, 57%);
-}
-
-.relative li {
-  font-style: italic;
-  padding: 1rem;
-}
-
-
-/* FIFTH DIV */
-.item-5 ul{
+.main-one ul li {
+  padding: .5rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.item-5 ul li {
-  padding: 2.5rem;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
   list-style: none;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 1px 1px 1px 1px #5b5510;
 }
 
-.item-5 ul li a {
+.main-one ul li a {
+  align-self: center;
+  font-size: 1.75rem;
   text-decoration: none;
-  font-size: 3rem;
-}
-
-.item-5 ul li a:hover {
-  color: hsla(120, 90%, 20%, 0.5);
-}
-
-.item-5 ul li a:active {
-  color: hsla(270, 90%, 20%, 0.5);
-}
-
-
-
-
-/* FOOTER */
-footer {
-  height: 100px;
-  background-color: #000;
   color: #fff;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  box-shadow: 1px 1px 1px 1px #5b5510;
 }
 
-footer p {
-  margin: auto 0;
+.absolute-vans {
+  background-image: url(../../img/web-pages/vans.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.absolute-apple {
+  background-image: url(../../img/web-pages/apple.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-one :last-child{
+  margin-top: 1rem;
+}
+
+@media all and (max-width: 600px) {
+  .main-one ul li {
+    width: 90%;
+  }
+}
+
+/* Main-Two / Relative links */
+.main-two * {
+  border: 1px solid;
+  color: grey;
 }

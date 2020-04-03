@@ -86,7 +86,6 @@ h6 {
   background-image: url(../../img/web-pages/brick-wall.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .item-1 > h1 {

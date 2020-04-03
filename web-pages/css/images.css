@@ -47,13 +47,12 @@ p {
 /* Header */
 header {
   height: 100vh;
-  background-image: url(../../img/web-pages/art-painting-wall.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   text-align: center;
+  background-image: url(../../img/web-pages/art-painting-wall.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 header > h1 {
@@ -273,5 +272,4 @@ footer p {
     flex-direction: column;
     justify-content: center;
   }
-}
 }

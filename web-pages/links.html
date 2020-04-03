@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Genesis Mandela | Make HTML & CSS easy</title>
   <link rel="stylesheet" href="css/links.css">
+  <link rel="stylesheet" href="css/template-flex.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
@@ -21,56 +22,79 @@
 </head>
 
 <body>
-  <section id="main-wrapper">
+  <div id="main-wrapper">
 
-    <h1>Links</h1>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="basics.html">Basics</a></li>
+          <li class="nav-item"><a href="images.html">Images</a></li>
+          <li class="nav-item"><a href="links.html">Links</a></li>
+          <li class="nav-item"><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-burger">
+          <div class="nav-burger-lines"></div>
+          <div class="nav-burger-lines"></div>
+          <div class="nav-burger-lines"></div>
+        </div>
+        <a class="logo-container" href="#">
+          <img class="logo-img" src="#" alt="main-logo">
+        </a>
+      </nav>
+      <h1>LINKS</h1>
+    </header>
 
-    <div class="item-1">
-      <h2>Absolute links</h2>
-      <p>Most detailed way to refer to a web resourse</p>
-      <ul>
-        <li><a href="https://www.vans.com" target="_blank" class="vans">Vans</a></li>
-        <li class="apple"><a href="https://www.apple.com" target="_blank">Apple</a></li>
-      </ul>
-      <p>
-        <em><sup>*</sup>Both are opened in a new window with<q>target:_blank</q>.</em>
-      </p>
-    </div>
+    <!-- Main -->
+    <main>
+      <div class="main-containers main-one">
+        <h2>Absolute links</h2>
+        <p>Most detailed way to refer to a web resourse.</p>
+      <div class="back-panel">
+        <ul>
+          <li class="absolute-vans"><a href="https://www.vans.com" target="_blank">Vans</a></li>
+          <li class="absolute-apple"><a href="https://www.apple.com" target="_blank">Apple</a></li>
+        </ul>
+      </div>
+        <p>
+          <em><sup>*</sup>Both are opened in a new window with<q>target:_blank</q>.</em>
+        </p>
+      </div>
 
-    <div class="item-2">
-      <h2>Relative links</h2>
-      <p>It is a way to point to another file inside the website or file that you are editing</p>
-    </div>
-    <div class="relative">
-    <div class="no-parent">
-      <ul>
-        <li><a href="basics.html">Basics</a></li>
-        <li><a href="images.html">Images</a></li>
-      </ul>
-      <p><em><sup>*</sup>No parent reference</em></p>
-    </div>
+      <div class="main-containers main-two">
+        <h2>Relative links</h2>
+        <p>It is a way to point to another file inside the website or file that you are editing.</p>
 
-    <div class="with-parent">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-      <p><em><sup>*</sup>With parent reference</em></p>
-    </div>
-    </div>
+        <div class="no-parent">
+          <ul>
+            <li><a href="basics.html">Basics</a></li>
+            <li><a href="images.html">Images</a></li>
+          </ul>
+          <p><em><sup>*</sup>No parent reference, they're inside the same folder.</em></p>
+        </div>
 
-    <div class="item-5">
-      <ul>
-        <li><a href="basics.html">Basics</a></li>
-        <li><a href="images.html">Images</a></li>
-        <li><a href="#main-wrapper">Links</a></li>
-      </ul>
-    </div>
-  </section>
+        <div class="with-parent">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <p><em><sup>*</sup>With parent reference, they're one folder back.</em></p>
+        </div>
+      </div>
 
-  <footer>
-    <p>&copy; Genesis Mandela 2020.</p>
-  </footer>
+      <div class="main-containers footer-nav">
+        <ul>
+          <li class="bricks"><a href="basics.html">Basics</a></li>
+          <li class="hands"><a href="images.html">Images</a></li>
+          <li class="vans"><a href="#main-wrapper">Links</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Genesis Mandela 2020.</p>
+    </footer>
+  </div>
 </body>
-
 </html>
