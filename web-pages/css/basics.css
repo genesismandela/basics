@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
   background-color: hsla(0, 0%, 79%, 0.75);
   color: hsl(0, 0%, 31%);
-  font-family: Helvetica, sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 /* ===GENERAL STYLES=== */
@@ -84,7 +84,7 @@ h6 {
   flex-direction: column;
   text-align: center;
   background-image: url(../../img/web-pages/brick-wall.jpg);
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -113,8 +113,15 @@ h6 {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  height: 100vh;
-  background-color: rgba(20, 19, 17, 0.38);
+  height: 100%;
+  background-image: url(../../img/web-pages/earth.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.item-2 * {
+  height: 100px;
 }
 
 /* LISTS SECTION */
@@ -171,6 +178,7 @@ h6 {
   flex-direction: column;
   background-color: black;
   margin: 2rem 0;
+  padding: 1.1rem 0;
 }
 
 .item-4 p {
