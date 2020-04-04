@@ -1,9 +1,6 @@
 /* Header */
 header {
   background-image: url(../../img/web-pages/tech-desk.jpg);
-  background-position: right;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 nav {

@@ -12,19 +12,21 @@ body,
 html {
   height: 100%;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', 'Roboto', Helvetica, Arial sans-serif;
 }
+
 body {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: hsla(0, 0%, 79%, 0.75);
-  color: #000;
+  background-color: hsla(0, 0%, 100%);
+  color: #fff;
+
 }
 
 /* ===GENERAL STYLES=== */
-.main-wrapper {
+#main-wrapper {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
 }
 
@@ -63,20 +65,26 @@ h6 {
 
 p {
   padding: 1rem 1.25rem;
+  font-size: 1rem;
 }
 
 /* ===HEADER=== */
-header {
+#main-header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-nav {
+header {
+  background-image: url(../img/low-angle-architect.jpg);
+}
+
+#main-navigation {
   width: 100%;
   position: absolute;
   top: 0;
@@ -85,10 +93,13 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
-.nav-list {
+nav {
+  background-color: rgba(200, 193, 185, 0.54);
+}
+
+#nav-list {
   position: absolute;
   right: 0;
   padding: .75rem;
@@ -97,48 +108,67 @@ nav {
   justify-content: space-around;
 }
 
-.nav-item {
+#nav-item {
   list-style: none;
   width: 33%;
 }
 
-.nav-item a {
+#nav-link {
   text-decoration: none;
   padding: 2.25rem;
   font-size: 1rem;
-  color: #fff;
+  font-weight: bold;
 }
 
-.nav-burger {
+#nav-link:link {
+  color: #000;
+}
+
+#nav-link:hover {
+  color: rgba(119, 34, 28, 0.58);
+}
+
+#nav-link:visited {
+  color: hsla(0, 0%, 100%, 0.58);
+}
+
+
+#nav-burger {
   position: absolute;
   right: 0.75rem;
   width: 4rem;
   display: none;
 }
 
-.nav-burger-lines {
+#nav-burger-lines {
   width: 50%;
   height: 2.5px;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 5px 5px;
   margin: 0.5rem auto;
 }
 
-.logo-container {
+#logo-container {
   position: absolute;
   left: 0;
   border: 1px solid;
   width: 3rem;
-  margin-left: .75rem;
+  margin-left: 2rem;
 }
 
-/* ===MEDIA QUERIES 768px=== */
+
+/* ===MEDIA QUERIES for NAV BAR/BURGER 768px=== */
 @media all and (max-width: 768px) {
-  .nav-list {
+  #nav-list {
     display: none;
   }
 
-  .nav-burger {
+  #nav-burger {
     display: block;
+  }
+
+  #title-container {
+    padding: inherit;
+    border: inherit;
   }
 }

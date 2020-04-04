@@ -1,59 +1,6 @@
-/* ===BROWSER RESETS=== */
-* {
-  border: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-}
-
-body,
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-body {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: hsla(0, 0%, 32%, 0.75);
-  color: hsl(0, 0%, 31%);
-  font-family: 'Inconsolata', monospace;
-}
-
-/* ===GENERAL STYLES=== */
-#main-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h1,
-h2 {
-  font-family: 'Courgette', cursive;
-}
-
-h2 {
-  padding: 1.25rem;
-  font-size: 2.35rem;
-  color: hsla(60, 75%, 75%, 1);
-}
-
-p {
-  color: hsla(47, 34%, 86%, 1);
-}
-
-
 /* Header */
 header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   background-image: url(../../img/web-pages/art-painting-wall.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 nav {
