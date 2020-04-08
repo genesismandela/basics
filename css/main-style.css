@@ -229,21 +229,3 @@ p {
     margin-bottom: 0.5rem;
   }
 }
-
-
-
-
-
-
-
-/*
-@media all and (max-width: 768px) {
-  #social-media-container {
-    bottom: 0;
-    right: inherit;
-    flex-direction: row;
-    width: 50%;
-    height: 50px;
-  }
-}
-*/
