@@ -1,10 +1,10 @@
 /* Header */
 header {
-  background-image: url(../../img/web-pages/art-painting-wall.jpg);
+  background-image: url(../../img/howth.jpg);
 }
 
 nav {
-  background-color: rgba(10, 136, 133, 0.54);
+  background-color: hsla(32, 41%, 75%, 0.37);
 }
 
 /* Main */

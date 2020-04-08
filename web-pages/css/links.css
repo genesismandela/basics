@@ -1,10 +1,10 @@
 /* Header */
 header {
-  background-image: url(../../img/web-pages/tech-desk.jpg);
+  background-image: url(../../img/desk.jpg);
 }
 
 nav {
-  background-color: hsla(0, 0%, 46%, 0.5);
+  background-color: hsla(215, 50%, 25%, 0.38);
 }
 
 /* Main-One / Absolute links */
