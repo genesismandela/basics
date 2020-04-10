@@ -1,6 +1,6 @@
 /******* Header *******/
 .trio-header {
-  background-image: url(../../images/scotland-forest.jpg);
+  background-image: url(../images/scotland-forest.jpg);
   margin-bottom: 2rem;
 }
 
@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
-  }
+}
 
 /******* Headers Container *******/
 .headers-container {
@@ -115,23 +115,6 @@ h6 {
     margin: 0 1rem;
   }
 }
-
-
-/******* Inline Container *******/
-.inline-container {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  margin: 2rem 0;
-  padding: 1.1rem 0;
-}
-
-.inline-container p {
-  color: white;
-  padding: 1rem;
-  line-height: 1.2rem;
-}
-
 
 /******* Footer Navegation *******/
 .footer-navigation {

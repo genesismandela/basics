@@ -1,18 +1,31 @@
-/* Header */
+/******* Header *******/
 .trio-header {
-  background-image: url(../../images/scotland-forest.jpg);
-  margin-bottom: 2rem;
+  background-image: url(../images/scotland-forest.jpg);
 }
 
+#title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
 
-/* Main-One / Absolute links */
-.main-one {
+  #title-container p {
+    font-size: calc(14px + (18 - 14) *((100vw - 320px)/(1600 - 320)));
+    width: 70%;
+    margin: 0 auto;
+  }
+
+/******* Absolute Container *******/
+.absolute-container {
   background-color: #777;
   box-shadow: 3px 3px 6px 6px #444;
 }
 
-h2 {
-  margin-top: 0.5rem;
+.absolute-container h2 {
+  padding-top: 3.5rem;
 }
 
 .back-panel {
@@ -20,7 +33,7 @@ h2 {
   margin: 0 auto;
 }
 
-.main-one ul {
+.absolute-container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -28,7 +41,7 @@ h2 {
   box-shadow: 3px 3px 6px 6px #5b5510;
 }
 
-.main-one ul li {
+.absolute-container ul li {
   padding: .5rem;
   display: flex;
   justify-content: center;
@@ -40,38 +53,74 @@ h2 {
   box-shadow: 1px 1px 1px 1px #5b5510;
 }
 
-.main-one ul li a {
+.absolute-container ul li a {
   align-self: center;
   font-size: 1.75rem;
   text-decoration: none;
   color: #fff;
   box-shadow: 1px 1px 1px 1px #5b5510;
+  padding: 1.1rem;
 }
 
-.absolute-vans {
-  background-image: url(../../img/web-pages/vans.jpg);
+.gallery {
+  background-image: url(../images/art-wall.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.absolute-apple {
-  background-image: url(../../img/web-pages/apple.jpg);
+.projects {
+  background-image: url(../images/sunset.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.main-one :last-child{
+.playlist {
+  background-image: url(../images/kick-ass.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.absolute-container :last-child{
   margin-top: 1rem;
 }
 
 @media all and (max-width: 600px) {
-  .main-one ul li {
+  .absolute-container ul li {
     width: 90%;
   }
 }
 
-/* Main-Two / Relative links */
-.main-two * {
+/******* Relative Container *******/
+.relative-container * {
   border: 1px solid;
   color: grey;
+}
+
+.relative-container h2 {
+  padding-top: 3.5rem;
+}
+
+.no-parent,
+.with-parent {
+  width:
+}
+
+
+
+
+
+.relative-container {
+  margin: 1.5rem 0;
+}
+
+.relative-container ul {
+  margin: 1.5rem 0;
+}
+
+.relative-container ul li {
+  margin: 1.5rem 0;
+}
+
+.relative-container a {
+  margin: 1.5rem 0;
 }
