@@ -1,7 +1,55 @@
 header {
-  background-image: url(../img/peaceful-scotland.jpg);
+  background-image: url(../images/el-nido.jpg);
+  height: 100%;
 }
 
-nav {
-  background-color: rgba(116, 86, 52, 0.77);
+#contact-card-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
+}
+
+.my-info {
+  color: white;
+}
+
+.my-info h1 {
+  font-size: 2rem;
+  padding: .75rem;
+}
+
+.my-info p {
+  text-align: center;
+}
+
+.my-info a {
+  color: white;
+  cursor: pointer;
+}
+
+#contact {
+  margin: .5rem auto 0;
+  width: 70%;
+}
+
+.input-field {
+  padding: .4rem;
+  color: white;
+}
+
+input, textarea {
+  text-align: center;
+  justify-content: center;
+  padding: .5rem;
+  border-radius: 5px;
+  opacity: .5;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }
