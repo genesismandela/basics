@@ -1,17 +1,13 @@
+
 header {
-  background-image: url(../img/peaceful-scotland.jpg);
+  background-image: url(../images/scotland.jpg);
 }
-
-nav {
-  background-color: rgba(116, 86, 52, 0.77);
-}
-
-@media all and (min-width: 768px) {
-  #title-container p {
-    margin: 0 auto;
-    padding: 1rem;
-    width: 85%;
-    background-color: hsla(82, 52%, 13%, 0.27);
-    border-radius: 25px;
-  }
+#title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
 }

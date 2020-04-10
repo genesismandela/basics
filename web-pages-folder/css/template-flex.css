@@ -1,0 +1,260 @@
+/* ===GENERAL STYLES=== */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 1.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.35rem;
+}
+
+h3 {
+  font-size: 2.20rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  padding: 1rem 1.25rem;
+}
+
+/* ===HEADER=== */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.nav-list {
+  position: absolute;
+  right: 0;
+  padding: .75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-item {
+  list-style: none;
+  width: 33%;
+}
+
+.nav-item a {
+  text-decoration: none;
+  padding: 2.25rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.nav-burger {
+  position: absolute;
+  right: 0.75rem;
+  width: 4rem;
+  display: none;
+}
+
+.nav-burger-lines {
+  width: 50%;
+  height: 2.5px;
+  background-color: #fff;
+  border-radius: 5px 5px;
+  margin: 0.5rem auto;
+}
+
+.logo-container {
+  position: absolute;
+  left: 0;
+  border: 1px solid;
+  width: 3rem;
+  margin-left: .75rem;
+}
+
+/* ===MAIN=== */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  padding: 0;
+}
+
+main .main-containers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: 1px solid;
+  height: 100%;
+}
+
+main .main-one {
+
+}
+
+main .main-two {
+
+}
+
+main .main-three {
+
+}
+
+main .main-four {
+
+}
+
+/* FOOTER NAV */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-nav ul{
+  padding: 2.25rem;
+  width: 100%;
+}
+
+.footer-nav ul li {
+  list-style: none;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+li.bricks {
+  background-image: url(../../img/web-pages/brick-wall.jpg);
+}
+
+li.hands {
+  background-image: url(../../img/web-pages/colorful-boy.jpg);
+}
+
+li.vans {
+  background-image: url(../../img/web-pages/vans.jpg);
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.footer-nav a:link {
+  color: white;
+}
+
+.footer-nav a:hover {
+  color: #5b5510;
+}
+
+
+/* ===FOOTER=== */
+footer {
+  background-color: black;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  margin: auto 0;
+  font-size: 2rem;
+}
+
+/* ===MEDIA QUERIES 768px=== */
+@media all and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-burger {
+    display: block;
+  }
+}
+
+
+/* ===MEDIA QUERIES 475px=== */
+@media all and (min-width: 475px) {
+  main {
+    padding: 0 2.5%;
+  }
+}
+
+/* ===MEDIA QUERIES 600px=== */
+@media all and (min-width: 600px) {
+  main {
+    padding: 0 3.5%;
+  }
+}
+
+/* ===MEDIA QUERIES 768px=== */
+@media all and (min-width: 900px) {
+  main {
+    padding: 0 5%;
+  }
+
+  .footer-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footer-nav ul li{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ===MEDIA QUERIES 900px=== */
+@media all and (min-width: 900px) {
+  main {
+    padding: 0 6%;
+  }
+}
