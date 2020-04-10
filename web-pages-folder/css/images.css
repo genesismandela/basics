@@ -1,10 +1,7 @@
 /* Header */
-header {
-  background-image: url(../../img/howth.jpg);
-}
-
-nav {
-  background-color: hsla(32, 41%, 75%, 0.37);
+.trio-header {
+  background-image: url(../../images/scotland-forest.jpg);
+  margin-bottom: 2rem;
 }
 
 /* Main */

@@ -1,11 +1,9 @@
 /* Header */
-header {
-  background-image: url(../../img/el-nido.jpg);
+.trio-header {
+  background-image: url(../../images/scotland-forest.jpg);
+  margin-bottom: 2rem;
 }
 
-nav {
-  background-color: hsla(215, 50%, 25%, 0.38);
-}
 
 /* Main-One / Absolute links */
 .main-one {
