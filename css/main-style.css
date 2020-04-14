@@ -18,8 +18,8 @@ html {
 body {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 /******** GENERAL STYLES ********/
@@ -63,8 +63,10 @@ h6 {
 }
 
 p {
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
+  letter-spacing: 1.6;
+  line-height: 1.4;
+  padding: .5rem 0.8rem;
+  margin-bottom: .5rem;
 }
 
 /******** HEADER ********/
@@ -78,6 +80,10 @@ p {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+#main-header p{
+  font-weight: 500;
 }
 
 /******** Navigation Menu ********/
@@ -253,3 +259,93 @@ p {
     margin-bottom: 0.5rem;
   }
 }
+
+
+/******** Basics, Images & Links  ********/
+.trio-header {
+  background-image: url(../web-pages-folder/images/scotland-forest.jpg);
+  margin-bottom: 2rem;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/******* Media queries and breakpoints *******/
+@media all and (min-width: 600px) {
+  main {
+    padding: 0 5%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .footer-navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footer-navigation ul li{
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  main {
+    padding: 0 7.5%;
+  }
+}
+
+
+
+/******* Footer Navegation *******/
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-navigation ul{
+  padding: 2.25rem;
+  width: 100%;
+}
+
+.footer-navigation ul li {
+  list-style: none;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.footer-navigation li {
+  background-color: hsla(140, 2%, 74%, 0.89);
+}
+
+.footer-navigation ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.footer-navigation a:link {
+  color: white;
+}
+
+.footer-navigation a:hover {
+  color: hsla(126, 4%, 38%, 0.89);
+}
+

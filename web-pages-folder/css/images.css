@@ -1,16 +1,4 @@
-/* Header */
-.trio-header {
-  background-image: url(../../images/scotland-forest.jpg);
-  margin-bottom: 2rem;
-}
-
-/* Main */
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Some Art */
+/* Art Container */
 .art-container {
   display: flex;
   flex-direction: column;
@@ -18,46 +6,39 @@ main {
   margin-bottom: 2rem;
 }
 
-.art-container h2 {
-  margin-left: 5%;
-}
-
 .photos-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  padding: 0 1.25rem 1.25rem;
-}
-
-.photos-container a {
-  width: 100%
   text-align: center;
   justify-content: space-around;
   align-self: center;
-  margin: 2rem 0;
   text-decoration: none;
-  color: hsla(47, 10%, 61%, 1);
-
-}
-
-.photos-container img {
-  padding: 0.5rem;
-  width: 90%;
-  max-width: 800px;
-}
-
-.colorful-boy {
-
+  width: 100%;
 }
 
 .photos-container p {
-  font-size: .8rem;
+  letter-spacing: 1.6;
+  line-height: 1.4;
+  padding: .5rem 0.8rem;
+  margin-bottom: .5rem;
 }
 
-.art-container > p {
-  padding: 1.25rem;
-  margin-left: 5%;
+.photos-container img {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem 0;
+}
+
+@media all and (min-width: 768px) {
+  .photos-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .photos-container img {
+    width: 35%;
+    max-width: 600px;
+  }
 }
 
 /* Other images */
@@ -65,9 +46,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.images-formats-container h2 {
 }
 
 .images-formats-container img {
@@ -187,16 +165,6 @@ footer p {
     padding: 5%;
   }
 
-}
-
-@media all and (min-width: 768px) {
-  .photos-container {
-    justify-content: space-around;
-  }
-
-  .photos-container a {
-    width: 40%;
-  }
 }
 
 @media all and (min-width: 900px) {

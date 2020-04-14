@@ -1,31 +1,17 @@
-/******* Header *******/
-.trio-header {
-  background-image: url(../images/scotland-forest.jpg);
-}
-
-#title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  #title-container p {
+#title-container p {
     font-size: calc(14px + (18 - 14) *((100vw - 320px)/(1600 - 320)));
     width: 70%;
     margin: 0 auto;
   }
 
 /******* Absolute Container *******/
-.absolute-container {
-  background-color: #777;
+.links-container {
   box-shadow: 3px 3px 6px 6px #444;
+  margin-bottom: 2rem;
 }
 
-.absolute-container h2 {
-  padding-top: 3.5rem;
+.links-container h2, p {
+  text-align: center;
 }
 
 .back-panel {
@@ -33,7 +19,7 @@
   margin: 0 auto;
 }
 
-.absolute-container ul {
+.links-container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -41,7 +27,7 @@
   box-shadow: 3px 3px 6px 6px #5b5510;
 }
 
-.absolute-container ul li {
+.links-container ul li {
   padding: .5rem;
   display: flex;
   justify-content: center;
@@ -53,7 +39,7 @@
   box-shadow: 1px 1px 1px 1px #5b5510;
 }
 
-.absolute-container ul li a {
+.links-container ul li a {
   align-self: center;
   font-size: 1.75rem;
   text-decoration: none;
@@ -80,12 +66,38 @@
   background-size: cover;
 }
 
-.absolute-container :last-child{
+.basics {
+  background-image: url(../images/night-basketball.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.images {
+  background-image: url(../images/ultra-brazil.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.home {
+  background-image: url(../../images/scotland.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  background-image: url(../../images/el-nido.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.links-container :last-child{
   margin-top: 1rem;
 }
 
 @media all and (max-width: 600px) {
-  .absolute-container ul li {
+  .links-container ul li {
     width: 90%;
   }
 }

@@ -14,42 +14,25 @@
     background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
 }
 
-/******* Headers Container *******/
-.headers-container {
+/* Main */
+main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  background-image: url(../images/earth.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-.headers-container * {
-  height: 100px;
+/******* Intro Container *******/
+.intro-container p {
+  letter-spacing: 1.6;
+  line-height: 1.4;
+  padding: .5rem 0.8rem;
+  margin-bottom: .5rem;
 }
 
-h2 {
-  color: hsla(60, 75%, 75%, 1);
+.night-basket {
+  width: 100%;
+  margin: 1.25rem 0;
 }
 
-h3 {
-  color: hsla(120, 75%, 75%, 1);
-}
-
-h4 {
-  color: hsla(180, 75%, 75%, 1);
-}
-
-h5 {
-  color: hsla(240, 75%, 75%, 1);
-}
-
-h6 {
-  color: hsla(300, 75%, 75%, 1);
-}
 
 /******* Lists Container *******/
 #lists-container {
@@ -57,6 +40,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   background-color: rgba(67, 70, 67, 0.73);
+  margin: 2rem 0;
 }
 
 #lists-container h2 {
@@ -115,45 +99,6 @@ h6 {
     margin: 0 1rem;
   }
 }
-
-/******* Footer Navegation *******/
-.footer-navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.footer-navigation ul{
-  padding: 2.25rem;
-  width: 100%;
-}
-
-.footer-navigation ul li {
-  list-style: none;
-  background-position: center;
-  background-size: cover;
-  padding: 1rem;
-  margin: 0.5rem;
-}
-
-.footer-navigation li {
-  background-color: rgba(152, 83, 33, 0.45);
-}
-
-.footer-navigation ul li a {
-  text-decoration: none;
-  font-size: 3rem;
-}
-
-.footer-navigation a:link {
-  color: white;
-}
-
-.footer-navigation a:hover {
-  color: hsla(43, 85%, 51%, 0.91);
-}
-
 /******* Footer *******/
 footer {
   height: 100px;
@@ -169,28 +114,3 @@ footer p {
   margin: auto 0;
 }
 
-/******* Media queries and breakpoints *******/
-@media all and (min-width: 600px) {
-  main {
-    padding: 0 5%;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  main {
-    padding: 0 7.5%;
-  }
-}
-
-@media all and (min-width: 900px) {
-  .footer-navigation ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-  }
-
-  .footer-navigation ul li{
-    width: 30%;
-  }
-}
