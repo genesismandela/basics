@@ -7,8 +7,8 @@
 }
 
 .photos-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1;
   text-align: center;
   justify-content: space-around;
   align-self: center;
@@ -25,19 +25,39 @@
 
 .photos-container img {
   width: 100%;
-  max-width: 400px;
   margin: 2rem 0;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 834px) {
   .photos-container {
     width: 100%;
-    justify-content: space-around;
+    grid-gap: 20px;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    'one two'
+    'three four'
+    ;
   }
 
   .photos-container img {
-    width: 35%;
-    max-width: 600px;
+    width: 100%;
+  }
+
+  .photo-1 {
+    grid-area: one;
+  }
+
+  .photo-2 {
+    grid-area: two;
+  }
+
+  .photo-3 {
+    grid-area: three;
+  }
+
+  .photo-4 {
+    grid-area: four;
   }
 }
 
