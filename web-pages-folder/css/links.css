@@ -1,3 +1,4 @@
+/******* Header *******/
 #title-container p {
     font-size: calc(14px + (18 - 14) *((100vw - 320px)/(1600 - 320)));
     width: 70%;
@@ -10,8 +11,13 @@
   margin-bottom: 2rem;
 }
 
-.links-container h2, p {
+.links-container h2 {
   text-align: center;
+  margin-top: 1.25rem;
+}
+
+.links-container p {
+  margin: 1.5rem 0;
 }
 
 .back-panel {
@@ -48,91 +54,45 @@
   padding: 1.1rem;
 }
 
-.gallery {
-  background-image: url(../images/art-wall.jpg);
+.links {
   background-position: center;
   background-size: cover;
+}
+
+.gallery {
+  background-image: url(../images/art-wall.jpg); 
 }
 
 .projects {
   background-image: url(../images/sunset.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .playlist {
   background-image: url(../images/kick-ass.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .basics {
   background-image: url(../images/night-basketball.jpg);
-  background-position: center;
-  background-size: cover;
 }
-
 
 .images {
   background-image: url(../images/ultra-brazil.jpg);
-  background-position: center;
-  background-size: cover;
 }
-
 
 .home {
   background-image: url(../../images/scotland.jpg);
-  background-position: center;
-  background-size: cover;
+}
+
+.about {
+  background-image: url(../images/genesis-mandela.jpg);
 }
 
 .contact {
   background-image: url(../../images/el-nido.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.links-container :last-child{
-  margin-top: 1rem;
 }
 
 @media all and (max-width: 600px) {
   .links-container ul li {
     width: 90%;
   }
-}
-
-/******* Relative Container *******/
-.relative-container * {
-  border: 1px solid;
-  color: grey;
-}
-
-.relative-container h2 {
-  padding-top: 3.5rem;
-}
-
-.no-parent,
-.with-parent {
-  width:
-}
-
-
-
-
-
-.relative-container {
-  margin: 1.5rem 0;
-}
-
-.relative-container ul {
-  margin: 1.5rem 0;
-}
-
-.relative-container ul li {
-  margin: 1.5rem 0;
-}
-
-.relative-container a {
-  margin: 1.5rem 0;
 }

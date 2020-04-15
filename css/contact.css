@@ -1,8 +1,10 @@
+/******* Header Container *******/
 header {
   background-image: url(../images/el-nido.jpg);
   height: 100%;
 }
 
+/******* Contact Information *******/
 #contact-card-container {
   width: 100%;
   height: 100vh;
