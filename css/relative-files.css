@@ -1,0 +1,82 @@
+/******** Basics, Images & Links  ********/
+.trio-header {
+  background-image: url(../../images/scotland-forest.jpg);
+  margin-bottom: 2rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#title-container p, q{
+  font-size: 1.5rem;
+}
+
+
+/******* Footer Navegation *******/
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-navigation ul{
+  padding: 2.25rem;
+  width: 100%;
+}
+
+.footer-navigation ul li {
+  list-style: none;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.footer-navigation li {
+  background-color: hsla(140, 2%, 74%, 0.89);
+}
+
+.footer-navigation ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.footer-navigation a:link, :visited {
+  color: white;
+}
+
+.footer-navigation a:hover {
+  color: hsla(126, 4%, 38%, 0.89);
+}
+
+@media all and (min-width: 900px) {
+  .footer-navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footer-navigation ul li{
+    width: 30%;
+  }
+}
+
+
+/******* Footer *******/
+footer {
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  margin: auto 0;
+}

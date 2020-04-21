@@ -2,6 +2,21 @@ header {
   background-image: url(../images/scotland.jpg);
 }
 
+.span {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.span-1 {
+  font-size: 3rem;
+}
+
+.span-2 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
 .btn:link, .btn:visited {
   text-decoration: none;
   padding: .8rem;
@@ -13,7 +28,9 @@ header {
   font-size: 1rem;
   width: 50%;
   margin: 0 auto;
+  margin-top: 3rem;
   font-weight: 500;
+  background: linear-gradient(rgba(17, 236, 229, 0.76),rgba(201, 189, 29, 0.75));
 }
 
 .btn:hover {
@@ -36,13 +53,9 @@ header {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.btn-white {
-  background-color: #fff;
-  color: #777;
-}
 
 .btn-white::after {
-  background-color: #fff;
+  background: linear-gradient(rgba(17, 236, 229, 0.76),rgba(201, 189, 29, 0.75));
 }
 
 .btn::after {

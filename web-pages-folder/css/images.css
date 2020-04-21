@@ -1,3 +1,6 @@
+img {
+  width: 100%;
+}
 /* Art Container */
 .art-container {
   display: flex;
@@ -5,7 +8,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 .photos-container {
   display: grid;
   grid-template-columns: 1;
@@ -15,19 +17,15 @@
   text-decoration: none;
   width: 100%;
 }
-
 .photos-container p {
   letter-spacing: 1.6;
   line-height: 1.4;
   padding: .5rem 0.8rem;
   margin-bottom: .5rem;
 }
-
 .photos-container img {
-  width: 100%;
   margin: 2rem 0;
 }
-
 @media all and (min-width: 834px) {
   .photos-container {
     width: 100%;
@@ -39,11 +37,6 @@
     'three four'
     ;
   }
-
-  .photos-container img {
-    width: 100%;
-  }
-
   .photo-1 {
     grid-area: one;
   }
@@ -59,4 +52,23 @@
   .photo-4 {
     grid-area: four;
   }
+}
+/* Composition */
+.composition {
+  width: 100%;
+  position: relative;
+}
+.composition h2 {
+  margin-bottom: 1.5rem;
+}
+.composition img {
+  width: 100%;
+}
+.ultra-family {
+  float: left;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
 }

@@ -23,11 +23,6 @@ body {
 }
 
 /******** GENERAL STYLES ********/
-#main-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 h1,
 h2,
@@ -39,7 +34,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -146,10 +141,19 @@ p {
 
 #logo-container {
   position: absolute;
-  left: 0;
-  border: 1px solid;
-  width: 3rem;
-  margin-left: 2rem;
+  left: 2rem;
+  top: 2rem;
+  width: 4rem;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
 }
 
 @media all and (max-width: 767px) {
@@ -187,14 +191,6 @@ p {
     padding: inherit;
     border: inherit;
   }
-
-  #title-container h1 {
-    
-  }
-
-  #title-container p {
-    
-  }
 }
 
 
@@ -207,7 +203,7 @@ p {
   width: 100%;
 }
 
-.social-links {
+.social-link {
   width: 25px;
   margin: 1rem;
 }
@@ -261,109 +257,4 @@ p {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-}
-
-
-/******** Basics, Images & Links  ********/
-.trio-header {
-  background-image: url(../web-pages-folder/images/scotland-forest.jpg);
-  margin-bottom: 2rem;
-}
-
-#title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
-}
-
-/* Main */
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-/******* Media queries and breakpoints *******/
-@media all and (min-width: 600px) {
-  main {
-    padding: 0 5%;
-  }
-}
-
-@media all and (min-width: 900px) {
-  .footer-navigation ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-  }
-
-  .footer-navigation ul li{
-    width: 30%;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  main {
-    padding: 0 7.5%;
-  }
-}
-
-
-
-/******* Footer Navegation *******/
-.footer-navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.footer-navigation ul{
-  padding: 2.25rem;
-  width: 100%;
-}
-
-.footer-navigation ul li {
-  list-style: none;
-  background-position: center;
-  background-size: cover;
-  padding: 1rem;
-  margin: 0.5rem;
-}
-
-.footer-navigation li {
-  background-color: hsla(140, 2%, 74%, 0.89);
-}
-
-.footer-navigation ul li a {
-  text-decoration: none;
-  font-size: 3rem;
-}
-
-.footer-navigation a:link, :visited {
-  color: white;
-}
-
-.footer-navigation a:hover {
-  color: hsla(126, 4%, 38%, 0.89);
-}
-
-
-/******* Footer *******/
-footer {
-  height: 100px;
-  background-color: #000;
-  color: #fff;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-footer p {
-  margin: auto 0;
 }
