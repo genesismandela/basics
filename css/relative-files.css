@@ -14,7 +14,6 @@ main {
 }
 
 /******* Footer Navigation *******/
-
 .footer-navigation {
   position: relative;
   display: flex;
@@ -53,10 +52,12 @@ main {
   padding: 1.5rem;
   text-decoration: none;
   display: inline-block;
+  transition: all .5s;
 }
 
 .footer-navigation__link:hover {
   color: rgba(162, 32, 23, 0.67);
+  transform: scale(1.2);
 }
 
 /******* Footer *******/
