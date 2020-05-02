@@ -9,10 +9,6 @@ main {
   margin: 0 auto;
 }
 
-#title-container p, q{
-  font-size: 1.5rem;
-}
-
 /******* Footer Navigation *******/
 .footer-navigation {
   position: relative;
