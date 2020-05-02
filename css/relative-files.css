@@ -42,17 +42,24 @@ main {
 
 .footer-navigation__list {
   width: 100%;
+  padding: 0;
   list-style: none;
   margin: 1rem 0;
 }
 
+.footer-navigation__item {
+  text-align: center;
+}
+
 .footer-navigation__link {
   color: rgba(255, 255, 255, 0.71);
-  font-size: 3.5rem;
+  font-size: 2rem;
   padding: 1.5rem;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   transition: all .5s;
+
 }
 
 .footer-navigation__link:hover {
