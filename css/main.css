@@ -32,6 +32,17 @@ html {
 
 body {
   box-sizing: border-box;
+  max-width: 1600px;
+  background-color: floralwhite;
+  color: #00050f;
+}
+
+main {
+  width: 100%;
+}
+
+img {
+  width: 100%;
 }
 
 body {
@@ -52,40 +63,102 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-right: 2.5rem;
 }
 
 .title--index {
   background-image: linear-gradient(to bottom right, rgba(179, 246, 255, 0.5), rgba(255, 150, 67, 0.5)), url(../images/scotland.jpg);
 }
 
-.title--trio {
-  background-image: url(../images/scotland-forest.jpg);
-}
-
-.title__main__span {
+.title__span {
   display: block;
   margin: 0 auto;
   padding: 2.5rem;
   backface-visibility: hidden;
 }
 
-.title__main__span--1 {
+.title__span--1 {
   font-size: 5rem;
   animation: moveInLeft 1.5s ease backwards;
 }
 
-.title__main__span--2 {
+.title__span--2 {
   font-size: 2.3rem;
   font-style: italic;
   animation: moveInLeft 2s ease 1s backwards;
+  padding: 2.5rem;
 }
 
-.bg-2 {
-  background-image: url(../images/scotland-forest.jpg);
+.main-text {
+  margin: 5rem 0;
 }
 
-.bg-3 {
-  background-image: url(../images/el-nido.jpg);
+.main-text > * {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  text-align: center;
+  margin: 10rem 0;
+  letter-spacing: .2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2.5rem;
+}
+
+.heading-quartiary {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.span {
+  text-transform: uppercase;
+  display: block;
+  width: 25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.span--parental {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  text-align: center;
+}
+
+.span--advisory {
+  background-color: white;
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 1.2rem;
+  text-align: center;
+}
+
+.span--explicit {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: .8rem;
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 10rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2.5rem;
 }
 
 .burger {
@@ -255,4 +328,31 @@ header {
 
 .navigation__link--blue:hover {
   color: #59a8b3;
+}
+
+.section-intro {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-music {
+  color: floralwhite;
+  background-color: rgba(0, 5, 15, 0.95);
+  padding: 5rem;
+}
+
+.section-music__card {
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+
+.section-music__card--parental {
+  background-image: linear-gradient(to left bottom, rgba(89, 168, 179, 0.5), rgba(179, 246, 255, 0.5)), url(../images/ultra-effects.jpg);
+}
+
+.section-music__card--homies {
+  background-image: linear-gradient(to left bottom, rgba(179, 118, 71, 0.5), rgba(255, 150, 67, 0.5)), url(../images/ultra-madness.jpg);
 }

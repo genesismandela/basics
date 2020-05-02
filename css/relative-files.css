@@ -4,10 +4,6 @@
   margin-bottom: 2rem;
 }
 
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
 
 #title-container p, q{
   font-size: 1.5rem;

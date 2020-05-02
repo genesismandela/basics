@@ -1,0 +1,73 @@
+// Section Intro
+.section-intro {
+  max-width: 900px;
+  margin: 0 auto;
+} 
+
+// Section Music
+.section-music {
+  color: $color-white;
+  background-color: rgba($color-black, .95);
+  padding: $padding-medium;
+
+    &__card {
+      border-radius: 5px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: $padding-medium;
+
+      &--parental {
+        background-image: linear-gradient(to left bottom,
+                    rgba($color-primary, .5),
+                    rgba($color-primary-light, .5)),
+                    url(../images/ultra-effects.jpg);
+      }
+
+      &--homies {
+        background-image: linear-gradient(to left bottom,
+                    rgba($color-secondary, .5),
+                    rgba($color-secondary-light, .5)),
+                    url(../images/ultra-madness.jpg);
+      }
+    }
+
+    &__parental-logo {
+
+        &__span {
+
+            &--1 {
+
+            }
+
+            &--2 {
+
+            }
+        }
+    }
+
+    &__parental-album {
+
+        &__link {
+
+        }
+
+        &__cover {
+
+        }
+    }
+
+    &__homies-song {
+
+        &__link {
+
+        }
+
+      
+        &__cover {
+          
+        }
+    }
+}
+
+

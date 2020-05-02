@@ -17,6 +17,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-right: $padding-small;
 
   &--index {
     background-image: linear-gradient(to bottom right,
@@ -25,29 +26,53 @@ body {
       url(../images/scotland.jpg);
   }
 
-  &--trio {
-    background-image: url(../images/scotland-forest.jpg);
-  }
-
-  &__main {
-
-    &__span {
-      display: block;
-      margin: 0 auto;
-      padding: $padding-small;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+  &__span {
+    display: block;
+    margin: 0 auto;
+    padding: $padding-small;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
       
-      &--1 {
+    &--1 {
       font-size: 5rem;
       animation: moveInLeft 1.5s ease backwards;
-      }
+    }
 
-      &--2 {
+    &--2 {
       font-size: 2.3rem;
       font-style: italic;
       animation: moveInLeft 2s ease 1s backwards;
-      }
-    } 
+      padding: $padding-small;
+    }
+  } 
+}
+
+// Main Text
+.main-text {
+  margin: $margin-medium 0;
+
+  & >* {
+    font-size: $font-default;
+    margin-bottom: $margin-small;
   }
+}
+
+// Headings
+.heading-secondary {
+  font-size: $font-xbig;
+  text-align: center;
+  margin: $margin-big 0;
+  letter-spacing: .2rem;
+}
+
+.heading-tertiary {
+  font-size: $font-big;
+  text-align: center;
+  margin: $margin-small;
+}
+
+.heading-quartiary {
+  font-size: $font-medium;
+  text-align: center;
+  padding: $padding-xsmall;
 }
