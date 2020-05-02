@@ -16,8 +16,32 @@ header {
 .span-2 {
   font-size: 1.5rem;
   font-style: italic;
-  animation: moveInLeftShort 1.5s ease .5s backwards;
+  animation: moveInBottom 1.5s ease .5s backwards;
 }
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(rgba(17, 236, 229, 0.5),rgba(201, 189, 29, 0.15));
+  margin: 3rem auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  border-radius: 50px;
+  width: 50%;
+  text-decoration: none;
+  color: rgba(201, 189, 29);
+  transition: 1s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: rgb(160, 151, 23);
+  background: linear-gradient(rgba(201, 189, 29, 0.5),rgba(17, 236, 229, 0.15));
+}
+
+
+
+
 
 @keyframes moveInRightLarge {
   0% {
@@ -30,6 +54,20 @@ header {
     opacity: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 1%;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
