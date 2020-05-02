@@ -18,6 +18,9 @@ img {
   width: 100%;
   margin: 2rem 0;
 }
+.photo{
+  margin-bottom: 1rem;
+}
 .photos-container p {
   letter-spacing: 1.6;
   line-height: 1.4;
@@ -34,6 +37,9 @@ img {
     'one two'
     'three four'
     ;
+  }
+  .photo{
+    margin-bottom: 0;
   }
   .photo-1 {
     grid-area: one;
