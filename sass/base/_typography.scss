@@ -1,0 +1,53 @@
+body {
+  font-family: 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-black;
+}
+
+// Header Title
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--index {
+    background-image: linear-gradient(to bottom right,
+      rgba($color-primary-light, .5),
+      rgba($color-secondary-light, .5)),
+      url(../images/scotland.jpg);
+  }
+
+  &--trio {
+    background-image: url(../images/scotland-forest.jpg);
+  }
+
+  &__main {
+
+    &__span {
+      display: block;
+      margin: 0 auto;
+      padding: $padding-small;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      
+      &--1 {
+      font-size: 5rem;
+      animation: moveInLeft 1.5s ease backwards;
+      }
+
+      &--2 {
+      font-size: 2.3rem;
+      font-style: italic;
+      animation: moveInLeft 2s ease 1s backwards;
+      }
+    } 
+  }
+}

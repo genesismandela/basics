@@ -1,0 +1,54 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 10rem;
+  animation: makeAppear 1.5s ease 3s backwards;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: $padding-small;
+    position: absolute;
+    right: 0;
+
+    @media all and (max-width: 767px) {
+      visibility: hidden;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    width: 33%;
+    cursor: pointer;
+  }
+  
+  &__link {
+    font-size: $font-medium;
+    text-decoration: none;
+    padding: $padding-small;
+    transition: all ease 1s;
+
+    &:link {
+      color: $color-white;
+    }
+
+    &:visited {
+      color: $color-white;
+    }
+    
+    &:hover {
+      color: $color-secondary;
+      transform: scaleX(1.5)
+    }
+
+    &--blue:hover {
+      color: $color-primary;
+    }
+  }
+}
+

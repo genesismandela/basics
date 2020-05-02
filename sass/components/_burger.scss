@@ -1,0 +1,19 @@
+.burger {
+  position: absolute;
+  right: 1rem;
+  width: 6.4rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+    cursor: pointer;
+  }
+
+  &__lines {
+    height: .25rem;
+    width: 50%;
+    background-color: $color-white;
+    border-radius: 5px;
+    margin: .5em;
+  }
+
+}

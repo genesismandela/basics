@@ -1,0 +1,28 @@
+.social-profile {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: makeAppear 1.5s ease 3s backwards;
+  
+  &__link {
+    backface-visibility: hidden;
+    margin: $margin-small;
+    width: 4.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    padding: $padding-xsmall;
+    transition: all ease-out 1s;
+
+    &--circle {
+      border-radius: 50%;
+    } 
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+} 
