@@ -92,18 +92,7 @@
   background-image: url(../../images/scotland.jpg);
 }
 
-.about {
-  background-image: url(../../images/genesis-mandela.jpg);
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
 
-.soon {
-  background-image: url(../../images/pyg.jpg);
-  background-position: top;
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
-}
 
 .contact {
   background-image: url(../../images/el-nido.jpg);

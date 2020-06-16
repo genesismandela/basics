@@ -144,6 +144,7 @@ p {
   left: 2rem;
   top: 2rem;
   width: 4rem;
+  display: none;
 }
 
 #title-container {
@@ -155,6 +156,19 @@ p {
   width: 100%;
   background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
 }
+
+.span {
+  text-shadow: 1px 1px black;
+}
+
+.span-1 {
+  color: rgba(201, 189, 29, 0.99);
+}
+
+.span-2 {
+  color: rgba(17, 236, 229, 0.36);
+}
+
 
 @media all and (max-width: 767px) {
   #nav-list {
@@ -183,7 +197,7 @@ p {
   }
 
   #nav-burger {
-    display: none;
+    display: block;
     cursor: pointer;
   }
 
