@@ -35,6 +35,8 @@ h6 {
 
 h1 {
   font-size: 3rem;
+  text-shadow: 1px 1px black;
+  color: rgba(201, 189, 29, 0.99);
 }
 
 h2 {
@@ -123,7 +125,6 @@ p {
   color: rgba(162, 32, 23, 0.67);
 }
 
-
 #nav-burger {
   position: absolute;
   right: 0.75rem;
@@ -132,11 +133,28 @@ p {
 }
 
 .nav-burger-lines {
-  width: 50%;
-  height: 2.5px;
-  background-color: #fff;
+  background-color: black;
   border-radius: 5px 5px;
+  height: 2.5px;
+  width: 50%;
   margin: 0.5rem auto;
+}
+
+.line2 {
+  width: 30% !important;
+}
+
+.line1 {
+  width: 60% !important;
+}
+
+#nav-burger.open .line2 {
+  width: 60%;
+  transform: rotate(45deg);
+}
+
+#nav-burger.open .line1 {
+  transform: rotate(-45deg);
 }
 
 #logo-container {
@@ -182,6 +200,7 @@ p {
     width: 100%;
     background: linear-gradient(rgba(17, 236, 229, 0.99),rgba(201, 189, 29, 0.99));
     visibility: hidden;
+
   }
 
   .nav-item {
@@ -210,11 +229,9 @@ p {
 
 /******** Social Media ********/
 #social-media-container {
-  display: flex;
-  justify-content: space-around;
+  display: none;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  z-index: 1;
 }
 
 .social-link {
@@ -231,38 +248,18 @@ p {
 }
 
 /******** Social Media - Responsive ********/
-
-@media all and (min-width: 475px) {
-  #social-media-container {
-    width: 75%;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media all and (min-width: 600px) {
-  #social-media-container {
-    width: 65%;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 @media all and (min-width: 768px) {
   #social-media-container {
+    display: block;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: right;
     width: 50px;
     left: inherit;
     margin: 0;
-    margin-left: 2rem;
     right: 0;
     bottom: inherit;
+    cursor: pointer;
   }
 
   .social-links {

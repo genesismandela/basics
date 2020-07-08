@@ -1,10 +1,15 @@
 /* Art Container */
-.art-container {
+.random-container {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 }
+
+.random-container h2 {
+  text-align: center;
+}
+
 .photos-container {
   display: grid;
   grid-template-columns: 1;
@@ -59,18 +64,22 @@
 .composition {
   width: 100%;
   position: relative;
+  margin-top: 6rem;
 }
 .composition h2 {
-  margin-bottom: 1.5rem;
+  text-align: center;
 }
 .composition img {
   width: 100%;
 }
 .ultra-family {
-  float: left;
-  padding-right: 1.5rem;
-  padding-bottom: 1.5rem;
-  margin: 0 auto;
+  display: block;
+  margin: 2rem auto;
   width: 100%;
   max-width: 500px;
+}
+
+.composition br {
+  display: block;
+  margin-top: 1.5rem;
 }

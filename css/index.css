@@ -30,19 +30,15 @@
   width: 50%;
   text-decoration: none;
   color: rgba(201, 189, 29);
-  transition: .5s ease;
+  transition: .1s ease;
 }
 
 .btn:hover {
-  transform: scale(1.1);
   color: rgb(160, 151, 23);
   background: linear-gradient(rgba(201, 189, 29, 0.5),rgba(17, 236, 229, 0.15));
+  border: 1px solid black;
   text-shadow: 1px 1px black;
 }
-
-
-
-
 
 @keyframes moveInRightLarge {
   0% {
