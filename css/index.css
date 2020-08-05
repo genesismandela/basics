@@ -10,18 +10,18 @@
 
 .span-1 {
   font-size: 3rem;
-  animation: moveInRightLarge 2s ease backwards;
+  animation: moveInRightLarge 2s ease .75s backwards;
 }
 
 .span-2 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-style: italic;
-  animation: moveInBottom 1.5s ease .5s backwards;
+  animation: moveInBottom 1.5s ease 1.5s backwards;
 }
 
 .btn {
   display: inline-block;
-  background: linear-gradient(rgba(17, 236, 229, 0.5),rgba(201, 189, 29, 0.15));
+  background: rgba(255, 255, 255, 0.71);
   margin: 3rem auto;
   font-size: 1.3rem;
   font-weight: bold;
@@ -29,22 +29,23 @@
   border-radius: 50px;
   width: 50%;
   text-decoration: none;
-  color: rgba(201, 189, 29);
+  color: rgba(162, 32, 23, 0.67);
   transition: .1s ease;
+  animation: moveInBottom 1.5s ease 1.75s backwards;
 }
 
 .btn:hover {
-  color: rgb(160, 151, 23);
-  background: linear-gradient(rgba(201, 189, 29, 0.5),rgba(17, 236, 229, 0.15));
-  border: 1px solid black;
-  text-shadow: 1px 1px black;
+  color: rgba(255, 255, 255, 0.71);
+  background: rgba(162, 32, 23, 0.67);
+  /*border: 1px solid black;
+  text-shadow: 1px 1px black;*/
 }
 
 @keyframes moveInRightLarge {
   0% {
     opacity: 1%;
-    -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
+    -webkit-transform: translateX(20rem);
+            transform: translateX(20rem);
   }
 
   100% {
@@ -81,30 +82,6 @@
             transform: translateX(0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (min-width: 600px) {

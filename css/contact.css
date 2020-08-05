@@ -13,7 +13,8 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
+  background: linear-gradient(rgba(162, 32, 23, 0.27),rgba(201, 189, 29, 0.25));
+  animation: makeAppear 1.5s ease-in 1s backwards;
 }
 
 .my-info {

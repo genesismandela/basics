@@ -9,6 +9,30 @@ main {
   margin: 0 auto;
 }
 
+.sentence {
+  color: rgba(255, 255, 255, 0.71);
+  font-size: 1.6rem;
+  animation: moveInBottom 1.5s ease 2s backwards;
+}
+
+.sentece q {
+  font-size: 1.4rem;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 1%;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 /******* Footer Navigation *******/
 .footer-navigation {
   position: relative;
@@ -18,7 +42,7 @@ main {
   text-align: center;
   padding: 5rem;
   margin: 3rem 0;
-  background: linear-gradient(rgba(17, 236, 229, 0.16),rgba(201, 189, 29, 0.25));
+  background: linear-gradient(rgba(162, 32, 23, 0.67),rgba(201, 189, 29, 0.25));
 }
 
 .footer-navigation__bg-video {
@@ -59,7 +83,7 @@ main {
 }
 
 .footer-navigation__link:hover {
-  color: rgba(162, 32, 23, 0.67);
+  color: rgba(201, 189, 29, 0.75);
   transform: scale(1.2);
 }
 

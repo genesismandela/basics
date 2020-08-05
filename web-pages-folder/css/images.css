@@ -79,7 +79,16 @@
   max-width: 500px;
 }
 
-.composition br {
-  display: block;
-  margin-top: 1.5rem;
+.img-zoom {
+  overflow: hidden;
+}
+
+.zoom {
+  transform-origin: 0 0;
+  transition: transform 1s, visibility .25s ease-out;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
 }

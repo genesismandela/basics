@@ -34,9 +34,10 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.8rem;
   text-shadow: 1px 1px black;
   color: rgba(201, 189, 29, 0.99);
+  animation: moveInRightLarge 2s ease 1.5s backwards;
 }
 
 h2 {
@@ -93,6 +94,8 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  animation: makeAppear 1.5s ease-out 3s backwards;
 }
 
 #nav-list {
@@ -133,7 +136,7 @@ p {
 }
 
 .nav-burger-lines {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.71);
   border-radius: 5px 5px;
   height: 2.5px;
   width: 50%;
@@ -172,11 +175,11 @@ p {
   text-align: center;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45));
 }
 
 .span {
   text-shadow: 1px 1px black;
+  cursor: pointer;
 }
 
 .span-1 {
@@ -184,7 +187,7 @@ p {
 }
 
 .span-2 {
-  color: rgba(17, 236, 229, 0.36);
+  color: rgba(162, 32, 23, 0.67);
 }
 
 
@@ -198,7 +201,7 @@ p {
     top: 0;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(17, 236, 229, 0.99),rgba(201, 189, 29, 0.99));
+    background: linear-gradient(rgba(162, 32, 23, 0.99),rgba(201, 189, 29, 0.99));
     visibility: hidden;
 
   }
@@ -232,6 +235,8 @@ p {
   display: none;
   position: absolute;
   z-index: 1;
+
+  animation: makeAppear 1.5s ease-out 3s backwards;
 }
 
 .social-link {
@@ -267,5 +272,29 @@ p {
     margin: 0 auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+}
+
+@keyframes moveInRightLarge {
+  0% {
+    opacity: 1%;
+    -webkit-transform: translateX(20rem);
+            transform: translateX(20rem);
+  }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes makeAppear {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }

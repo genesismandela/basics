@@ -46,7 +46,7 @@
   list-style: none;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  box-shadow: 1px 1px 1px 1px #d4c624a1;
+  box-shadow: 1px 1px 1px 1px rgba(162, 32, 23, 0.67);
   border-radius: 4px;
 }
 
@@ -55,18 +55,18 @@
   font-size: 1.75rem;
   text-decoration: none;
   color: #fff;
-  box-shadow: 1px 1px 1px 1px hsla(177, 94%, 52%, 0.631);
+  box-shadow: 1px 1px 1px 1px rgba(162, 32, 23, 0.67);
   padding: 1.1rem;
   border-radius: 3px;
   transition: all .5s;
 }
 .links-container ul li a:hover {
   transform: scale(1.1);
-  background-color: hsla(55, 71%, 49%, 0.25);
+  background-color: rgba(201, 189, 29, 0.25);
 }
 .links {
   background-position: center;
-  background-size: cover;
+  background-size: 350px 250px;
 }
 .gallery {
   background-image: url(../../images/art-wall.jpg); 
