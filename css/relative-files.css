@@ -1,6 +1,6 @@
 /******** Basics, Images & Links  ********/
 .trio-header {
-  background-image: url(../images/scotland-forest.jpg);
+  background: linear-gradient(rgba(162, 32, 23, 0.27),rgba(201, 189, 29, 0.25)), url(../images/scotland-forest.jpg);
   margin-bottom: 2rem;
 }
 
@@ -12,7 +12,17 @@ main {
 .sentence {
   color: rgba(255, 255, 255, 0.71);
   font-size: 1.6rem;
+  padding: 1rem 2.5rem;
+  margin: 0 1rem;
   animation: moveInBottom 1.5s ease 2s backwards;
+}
+
+@media only screen and (max-width: 768px) {
+  .sentence-long {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0;
+  }
 }
 
 .sentece q {font-size: 1.4rem;}
@@ -51,7 +61,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background-image: 
-    linear-gradient(to right bottom, rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45)), url(../../images/night-basketball.jpg);
+    linear-gradient(to right bottom, rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45)), url(../images/night-basketball.jpg);
     background-size: cover;
     background-position: center;
   margin: 2rem 0;
@@ -256,60 +266,22 @@ main {
   background-position: center;
   background-size: cover;
 }
-.gallery {background-image: url(../../images/art-wall.jpg); }
+.gallery {background-image: url(../images/art-wall.jpg); }
 
-.projects {background-image: url(../../images/sunset.jpg);}
+.projects {background-image: url(../images/sunset.jpg);}
 
-.playlist {background-image: url(../../images/kick-ass.jpg);}
+.playlist {background-image: url(../images/kick-ass.jpg);}
 
-.basics {background-image: url(../../images/night-basketball.jpg);}
+.basics {background-image: url(../images/night-basketball.jpg);}
 
-.images {background-image: url(../../images/ultra-brazil.jpg);}
+.images {background-image: url(../images/ultra-brazil.jpg);}
 
-.home {background-image: url(../../images/scotland.jpg);}
+.home {background-image: url(../images/scotland.jpg);}
 
-.contact {background-image: url(../../images/el-nido.jpg);}
+.contact {background-image: url(../images/el-nido.jpg);}
 
 @media all and (max-width: 600px) {
   .links-container ul li {
     width: 90%;
   }
-}
-
-/******* Footer *******/
-.footer {
-  background-color: #000;
-  color: #fff;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.footer-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-item {
-  padding: 2rem;
-  list-style: none;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.71);
-}
-
-.footer-link:hover {color: rgba(162, 32, 23, 0.67);}
-
-.footer-link:visited {color: rgba(201, 189, 29, 0.75);}
-
-.footer-link:visited:hover {color: rgba(162, 32, 23, 0.67);}
-
-.footer-copyright p {
-  font-size: 1.6rem;
-  margin: auto 0;
-  padding: 1.5rem;
 }
