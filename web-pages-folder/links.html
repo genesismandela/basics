@@ -6,24 +6,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Working with HTML relative and absolute link tags and CSS backgrounds">
+  <meta name="author" content="Genesis Mandela">
+  <meta name="keywords" content="css-background, absolute-link, relative-link, css-hover">
   <!-- Title -->
-  <title>Genesis Mandela | Links</title>
+  <title>Genesis Mandela | HTML & CSS Project / Links</title>
   <!-- Style -->
   <link rel="stylesheet" href="../css/main-style.css">
-  <link rel="stylesheet" href="css/links.css">
   <link rel="stylesheet" href="../css/relative-files.css">
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&family=Roboto&display=swap" rel="stylesheet">
-  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-159180375-1');
+  gtag('config', 'UA-159180375-1');
   </script>
 </head>
 
@@ -45,17 +45,12 @@
       <div class="nav-burger-lines line2"></div>
     </div>
     <!-- Navigation Logo -->
-      <a id="logo-container" href="index.html">
-        <img id="logo-img" src="../images/logo.svg" alt="main-logo">
-      </a>
+      <a id="logo-container" href="index.html"> <img id="logo-img" src="../images/logo.svg" alt="main-logo"> </a>
     </nav>
     <!-- Main Title -->
       <div id="title-container">
         <h1 id="main-title" class="title-links">Links</h1>
-        <p class="sentence">
-          If you pay attention to waking consciousness and other levels available during meditation, you'll develop the ability to tell whether you're awake or not when you're dreaming. And, when you notice that you're dreaming is the moment you just may move into
-          a lucid dream, a very interesting way to travel.
-        </p>
+        <p class="sentence"> If you pay attention to waking consciousness and other levels available during meditation, you'll develop the ability to tell whether you're awake or not when you're dreaming. And, when you notice that you're dreaming is the moment you just may move into a lucid dream, a very interesting way to travel.</p>
       </div>
     <!-- Social Media -->
       <div id="social-media-container">
@@ -88,11 +83,8 @@
               <a href="https://open.spotify.com/playlist/16TJGxz5eC27cI4r7OfXQQ?si=pifPBHQ-Tl-Qf3gK3IOApw" target="_blank">&#43; 18</a>
             </li>
           </ul>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rerum illo maiores odit molestiae quisquam error aspernatur amet fugit, molestias dolorem et possimus porro dolores corporis asperiores voluptate ipsam accusantium deserunt quaerat nesciunt suscipit fugiat? Voluptates quas soluta at aut? 
-          </p>
-        </div>
-        
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rerum illo maiores odit molestiae quisquam error aspernatur amet fugit, molestias dolorem et possimus porro dolores corporis asperiores voluptate ipsam accusantium deserunt quaerat nesciunt suscipit fugiat? Voluptates quas soluta at aut?</p>
+        </div> 
       </div>
 
       <div class="links-container relative">
@@ -114,7 +106,7 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, consequatur consectetur? Suscipit quod aperiam perspiciatis quos? Quidem unde sit reiciendis vel veniam necessitatibus excepturi.</p>
         </div>
       </div>
-
+    <!--
       <div class="footer-navigation">
         <div class="footer-navigation__bg-video">
           <video class="footer-navigation__content" autoplay muted loop playsinline>
@@ -127,12 +119,20 @@
           <li class="footer-navigation____item"><a class="footer-navigation__link" href="images.html">Images</a></li>
         </ul>
       </div>
+    -->
     </main>
-
-    <footer>
-      <p>Genesis Mandela 2020.</p>
+    <footer class="footer">
+      <div class="footer-navigation">
+          <ul class="footer-list">
+              <li class="footer-item"><a href="#" class="footer-link">About</a></li>
+              <li class="footer-item"><a href="../contact.html" class="footer-link">Contact </a></li>
+              <li class="footer-item"><a href="#" class="footer-link">Portfolio</a></li>
+          </ul>
+      </div>
+      <div class="footer-copyright">
+          <p> Genesis Mandela 2020. </p>
+      </div>
     </footer>
     <script src="../main.js"></script>
 </body>
-
 </html>

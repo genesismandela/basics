@@ -15,9 +15,7 @@ main {
   animation: moveInBottom 1.5s ease 2s backwards;
 }
 
-.sentece q {
-  font-size: 1.4rem;
-}
+.sentece q {font-size: 1.4rem;}
 
 @keyframes moveInBottom {
   0% {
@@ -33,71 +31,285 @@ main {
   }
 }
 
-/******* Footer Navigation *******/
-.footer-navigation {
-  position: relative;
+/* Basics */
+/******* Intro Container *******/
+.intro-container p {
+  letter-spacing: 1.6;
+  line-height: 1.4;
+  padding: .5rem 0.8rem;
+  margin-bottom: .5rem;
+}
+
+.night-basket {
+  width: 100%;
+  margin: 1.25rem 0;
+}
+
+/******* Lists Container *******/
+#lists-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding: 5rem;
-  margin: 3rem 0;
-  background: linear-gradient(rgba(162, 32, 23, 0.67),rgba(201, 189, 29, 0.25));
+  background-image: 
+    linear-gradient(to right bottom, rgba(17, 236, 229, 0.36),rgba(201, 189, 29, 0.45)), url(../../images/night-basketball.jpg);
+    background-size: cover;
+    background-position: center;
+  margin: 2rem 0;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  padding: 5rem 0;
 }
 
-.footer-navigation__bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.footer-navigation__content {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.footer-navigation__list {
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  margin: 1rem 0;
-}
-
-.footer-navigation__item {
+#lists-container h2 {
+  margin-top: 1rem;
   text-align: center;
 }
 
-.footer-navigation__link {
-  color: rgba(255, 255, 255, 0.71);
-  font-size: 2rem;
-  padding: 1.5rem;
+.lists-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.lists-container > div {width: 90%;}
+
+.lists-container ol, ul {
+  list-style-position: inside;
+  padding: 1rem;
+}
+
+.list{
+  border-left: 1px solid white;
+  border-radius: 3px;
+  margin: 1rem auto;
+  width: 95%;
+  background-color: hsla(0, 100%, 97%, 0.829);
+  color: black;
+  box-shadow: .5rem 1rem 4px hsla(126, 4%, 38%, 0.39);
+  transition: all 1s;
+}
+.list:hover {
+  transform: scale(1.1);
+  box-shadow: .7rem 1.2rem 7px hsla(140, 3%, 21%, 0.89);
+}
+
+.lists-container li {
+  font-size: .8rem;
+  padding: .65rem;
+}
+
+
+.lists-container p {
+  margin: .7rem;
+  padding-bottom: 1rem;
+  border-bottom: .75px solid black;
+}
+
+.tip {font-size: .7rem;}
+
+@media all and (min-width: 768px) {
+  .lists-container > div {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .unordered-list,
+  .ordered-list {
+    margin: 0 1rem;
+  }
+}
+
+/* Images */
+/* Art Container */
+.random-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.random-container h2 {text-align: center;}
+
+.photos-container {
+  display: grid;
+  grid-template-columns: 1;
   text-align: center;
+  justify-content: space-around;
+  align-self: center;
   text-decoration: none;
-  display: inline-block;
-  transition: all .5s;
+  width: 100%;
+  margin: 2rem 0;
+}
+.photo{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.photos-container p {
+  letter-spacing: 1.6;
+  line-height: 1.4;
+  padding: .5rem 0.8rem;
+  margin-bottom: .5rem;
+}
+@media all and (min-width: 834px) {
+  .photos-container {
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    'one two'
+    'three four'
+    ;
+  }
+  .photo{margin-bottom: 0;}
 
+  .photo-1 {grid-area: one;}
+
+  .photo-2 {grid-area: two;}
+
+  .photo-3 {grid-area: three;}
+
+  .photo-4 {grid-area: four;}
+}
+/* Composition */
+.composition {
+  width: 100%;
+  position: relative;
+  margin: 6rem 0;
+}
+.composition h2 {text-align: center;}
+.composition img {width: 100%;}
+
+.ultra-family {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 500px;
 }
 
-.footer-navigation__link:hover {
-  color: rgba(201, 189, 29, 0.75);
-  transform: scale(1.2);
+.img-zoom {overflow: hidden;}
+
+.zoom {
+  transform-origin: 0 0;
+  transition: transform 1s, visibility .25s ease-out;
+  cursor: pointer;
+}
+
+.zoom:hover {transform: scale(1.1);}
+
+
+/* Links Page */
+/******* Absolute Container *******/
+.links-container {
+  background-color: hsla(0, 0%, 85%, 0.712);
+  box-shadow: 1px 2px 6px #444;
+  padding: 3rem 0;
+  margin-bottom: 6rem;
+}
+
+.links-container h2 {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.links-container p {margin: 1.5rem 0;}
+
+.back-panel {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.links-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.links-container ul li {
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
+  list-style: none;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 1px 1px 1px 1px rgba(162, 32, 23, 0.67);
+  border-radius: 4px;
+}
+
+.links-container ul li a {
+  align-self: center;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(162, 32, 23, 0.67);
+  padding: 1.1rem;
+  border-radius: 3px;
+  transition: all .5s;
+}
+.links-container ul li a:hover {
+  transform: scale(1.1);
+  background-color: rgba(201, 189, 29, 0.25);
+}
+.links {
+  background-position: center;
+  background-size: cover;
+}
+.gallery {background-image: url(../../images/art-wall.jpg); }
+
+.projects {background-image: url(../../images/sunset.jpg);}
+
+.playlist {background-image: url(../../images/kick-ass.jpg);}
+
+.basics {background-image: url(../../images/night-basketball.jpg);}
+
+.images {background-image: url(../../images/ultra-brazil.jpg);}
+
+.home {background-image: url(../../images/scotland.jpg);}
+
+.contact {background-image: url(../../images/el-nido.jpg);}
+
+@media all and (max-width: 600px) {
+  .links-container ul li {
+    width: 90%;
+  }
 }
 
 /******* Footer *******/
-footer {
-  height: 100px;
+.footer {
   background-color: #000;
   color: #fff;
   font-size: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-footer p {
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item {
+  padding: 2rem;
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.71);
+}
+
+.footer-link:hover {color: rgba(162, 32, 23, 0.67);}
+
+.footer-link:visited {color: rgba(201, 189, 29, 0.75);}
+
+.footer-link:visited:hover {color: rgba(162, 32, 23, 0.67);}
+
+.footer-copyright p {
+  font-size: 1.6rem;
   margin: auto 0;
+  padding: 1.5rem;
 }

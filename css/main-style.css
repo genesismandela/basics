@@ -23,42 +23,30 @@ body {
 }
 
 /******** GENERAL STYLES ********/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 1.25rem;
-}
+h1, h2, h3, h4, h5, h6 {padding: 1.25rem;}
 
 h1 {
   font-size: 3.8rem;
   text-shadow: 1px 1px black;
   color: rgba(201, 189, 29, 0.99);
   animation: moveInRightLarge 2s ease 1.5s backwards;
+  cursor: pointer;
+  transition: all 1s;
 }
 
-h2 {
-  font-size: 2.35rem;
-}
+h1:hover {transform: skewY(2deg) scale(1.1);}
 
-h3 {
-  font-size: 2.20rem;
-}
+h1 .span-2:hover {transform: skewY(-2deg) scale(1.1) !important;}
 
-h4 {
-  font-size: 2rem;
-}
+h2 {font-size: 2.6rem;}
 
-h5 {
-  font-size: 1.75rem;
-}
+h3 {font-size: 1.8rem;}
 
-h6 {
-  font-size: 1.5rem;
-}
+h4 {font-size: 1.6rem;}
+
+h5 {font-size: 1.5rem;}
+
+h6 {font-size: 1.4rem;}
 
 p {
   letter-spacing: 1.6;
@@ -67,7 +55,7 @@ p {
   margin-bottom: .5rem;
 }
 
-/******** HEADER ********/
+/***** Main HEADER Style *****/
 #main-header {
   height: 100vh;
   display: flex;
@@ -80,11 +68,9 @@ p {
   position: relative;
 }
 
-#main-header p{
-  font-weight: 500;
-}
+#main-header p{font-weight: 500;}
 
-/******** Navigation Menu ********/
+/***** Navigation Menu *****/
 #main-navigation {
   width: 100%;
   position: absolute;
@@ -94,7 +80,6 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   animation: makeAppear 1.5s ease-out 3s backwards;
 }
 
@@ -120,14 +105,11 @@ p {
   font-weight: bold;
 }
 
-.nav-link:link, :visited {
-  color: rgba(255, 255, 255, 0.71);
-}
+.nav-link:link, :visited {color: rgba(255, 255, 255, 0.71);}
 
-.nav-link:hover {
-  color: rgba(162, 32, 23, 0.67);
-}
+.nav-link:hover {color: rgba(162, 32, 23, 0.67);}
 
+/* Burger */
 #nav-burger {
   position: absolute;
   right: 0.75rem;
@@ -143,13 +125,9 @@ p {
   margin: 0.5rem auto;
 }
 
-.line2 {
-  width: 30% !important;
-}
+.line2 {width: 30% !important;}
 
-.line1 {
-  width: 60% !important;
-}
+.line1 {width: 60% !important;}
 
 #nav-burger.open .line2 {
   width: 60%;
@@ -160,6 +138,7 @@ p {
   transform: rotate(-45deg);
 }
 
+/* Logo */
 #logo-container {
   position: absolute;
   left: 2rem;
@@ -168,6 +147,7 @@ p {
   display: none;
 }
 
+/* Title */
 #title-container {
   display: flex;
   flex-direction: column;
@@ -182,15 +162,7 @@ p {
   cursor: pointer;
 }
 
-.span-1 {
-  color: rgba(201, 189, 29, 0.99);
-}
-
-.span-2 {
-  color: rgba(162, 32, 23, 0.67);
-}
-
-
+/* Navigation Phones */
 @media all and (max-width: 767px) {
   #nav-list {
     display: flex;
@@ -203,7 +175,6 @@ p {
     width: 100%;
     background: linear-gradient(rgba(162, 32, 23, 0.99),rgba(201, 189, 29, 0.99));
     visibility: hidden;
-
   }
 
   .nav-item {
@@ -228,7 +199,6 @@ p {
     border: inherit;
   }
 }
-
 
 /******** Social Media ********/
 #social-media-container {
@@ -275,6 +245,127 @@ p {
   }
 }
 
+/* Home */
+.header-home {
+  background: linear-gradient(rgba(162, 32, 23, 0.27),rgba(201, 189, 29, 0.25)), url(../images/scotland.jpg);
+}
+
+.span {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.span-1 {
+  font-size: 3rem;
+  color: rgba(201, 189, 29, 0.99);
+  animation: moveInRightLarge 2s ease .75s backwards;
+}
+
+.span-2 {
+  font-size: 2.4rem;
+  font-style: italic;
+  color: rgba(162, 32, 23, 0.67);
+  animation: moveInBottom 1.5s ease 1.5s backwards;
+  transform: none;
+}
+
+.btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.71);
+  margin: 3rem auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  border-radius: 50px;
+  width: 50%;
+  text-decoration: none;
+  color: rgba(162, 32, 23, 0.67);
+  transition: .1s ease;
+  animation: moveInBottom 1.5s ease 1.75s backwards;
+}
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.71);
+  background: rgba(162, 32, 23, 0.67);
+  /*border: 1px solid black;
+  text-shadow: 1px 1px black;*/
+}
+
+@media (min-width: 600px) {
+  .btn:link, .btn:visited {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn:link, .btn:visited {
+    width: 20%;
+  }
+}
+
+/* CONTACT */
+/******* Header Container *******/
+.header-contact {
+  background-image: url(../images/el-nido.jpg);
+  height: 100%;
+}
+
+/******* Contact Information *******/
+#contact-card-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(rgba(162, 32, 23, 0.27),rgba(201, 189, 29, 0.25));
+  animation: makeAppear 1.5s ease-in 1s backwards !important; 
+}
+
+.my-info {
+  color: white;
+}
+
+.my-info h1 {
+  font-size: 2rem;
+  padding: .75rem;
+  animation: makeAppear 1.5s ease-in 1s backwards !important; 
+}
+
+.my-info p {
+  text-align: center;
+}
+
+.my-info a {
+  color: white;
+  cursor: pointer;
+}
+
+#contact {
+  margin: .5rem auto 0;
+  width: 70%;
+}
+
+.input-field {
+  padding: .4rem;
+  color: white;
+}
+
+input, textarea {
+  text-align: center;
+  justify-content: center;
+  padding: .5rem;
+  border-radius: 5px;
+  opacity: .5;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/***** ANIMATIONS *****/
 @keyframes moveInRightLarge {
   0% {
     opacity: 1%;
@@ -296,5 +387,47 @@ p {
 
   100% {
     opacity: 100%;
+  }
+}
+
+@keyframes moveInRightLarge {
+  0% {
+    opacity: 1%;
+    -webkit-transform: translateX(20rem);
+            transform: translateX(20rem);
+  }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 1%;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveInLeftShort {
+  0% {
+    opacity: 1%;
+    -webkit-transform: translateX(-3rem);
+            transform: translateX(-3rem);
+  }
+
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
