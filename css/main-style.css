@@ -273,15 +273,17 @@ p {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   background: rgba(255, 255, 255, 0.71);
   margin: 3rem auto;
   font-size: 1.3rem;
   font-weight: bold;
   padding: 1rem 0;
+  border: 1px solid black;
   border-radius: 50px;
   width: 50%;
   text-decoration: none;
+  text-align: center;
   color: rgba(162, 32, 23, 0.67);
   transition: .1s ease;
   animation: moveInBottom 1.5s ease 1.75s backwards;
