@@ -4,7 +4,7 @@ Hey there!
 I am Mandela and this is Basics, project made using HTML and CSS.
 
 
-To make this project I tried to use my knowledge in HTML5 using the latest elements or syntax and always tried to follow an organized structure to make it as clear as possible.
+To make this project I use my knowledge in HTML5 using the latest elements and syntax, always tried to follow an organized structure to make it as clear as possible.
 
 All the HTML files contains the same header structure where are filled with a navigation menu to jump into the different pages, a main heading with the topic of the page and a navigation menu to link to my social profiles.
 
@@ -19,7 +19,7 @@ Being my real first project I am happy with the result but actually knowing that
 
 Basics Project - https://genesismandela.github.io/basics/index.html
 
-Mandela Samboy Blasco. 
+Genesis Mandela Samboy Blasco. 
 
-Last change 2 May 2020.
+Last change 13 Aug 2020.
 
